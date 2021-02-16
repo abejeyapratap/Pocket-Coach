@@ -1,0 +1,1 @@
+Hello, my name is Brian Su. I am a sophomore majoring in Computing Security and Technology at Drexel University. I have experience in Python, HTML, CSS, Javascript. 
