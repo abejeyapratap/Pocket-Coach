@@ -1,1 +1,1 @@
-Hi, my name is Abe Jeyapratap. I'm a freshman studying CS at Drexel. 
+Hi, my name is Abe Jeyapratap. I'm a freshman studying Computer Science at Drexel. I have experience working with Java, Python, HTML, and CSS.
