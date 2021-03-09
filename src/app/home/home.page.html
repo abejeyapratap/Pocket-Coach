@@ -1,20 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    <ion-toolbar color="primary">
+      <ion-title size="large">Pocket Coach</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size-md="6">
+        <a routerLink="/soccer" style="text-decoration: none">
+          <ion-card>
+            <img src="/assets/img/soccer.png" width="100%" />
+            <ion-card-header>
+              <ion-card-title>Soccer</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Team sport</ion-card-content>
+          </ion-card>
+        </a>
+      </ion-col>
+      <ion-col size-md="6">
+        <a routerLink="/tennis" style="text-decoration: none">
+          <ion-card>
+            <img src="./assets/img/tennis.png" width="100%" />
+            <ion-card-header>
+              <ion-card-title>Tennis</ion-card-title>
+            </ion-card-header>
+            <ion-card-content> Solo/Duo</ion-card-content>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6">
+        <a routerLink="/basketball" style="text-decoration: none">
+          <ion-card>
+            <img src="/assets/img/basketball.png" width="100%" />
+            <ion-card-header>
+              <!-- leave as two words for formatting -->
+              <ion-card-title>Basket ball</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Team sport</ion-card-content>
+          </ion-card>
+        </a>
+      </ion-col>
+      <ion-col size-md="6">
+        <a routerLink="/volleyball" style="text-decoration: none">
+          <ion-card>
+            <!-- leave as two words for formatting -->
+            <img src="/assets/img/volleyball.png" width="100%" />
+            <ion-card-header>
+              <ion-card-title>Volley ball</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Team sport</ion-card-content>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

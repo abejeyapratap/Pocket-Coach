@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'volleyball',
+    loadChildren: () => import('./volleyball/volleyball.module').then( m => m.VolleyballPageModule)
+  },
+  {
+    path: 'soccer',
+    loadChildren: () => import('./soccer/soccer.module').then( m => m.SoccerPageModule)
+  },
+  {
+    path: 'tennis',
+    loadChildren: () => import('./tennis/tennis.module').then( m => m.TennisPageModule)
+  },
+  {
+    path: 'basketball',
+    loadChildren: () => import('./basketball/basketball.module').then( m => m.BasketballPageModule)
+  },
+  {
+    path: 'volleyball-rules',
+    loadChildren: () => import('./volleyball-rules/volleyball-rules.module').then( m => m.VolleyballRulesPageModule)
+  },
 ];
 
 @NgModule({

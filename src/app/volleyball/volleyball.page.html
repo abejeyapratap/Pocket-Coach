@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title size="large">Volleyball</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Back Button -->
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/">
+      <ion-icon name="arrow-back-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-text color="dark"><h1>Description</h1></ion-text>
+  <ion-text>
+    <h6>
+      Volleyball is a sport where two teams of six are trying to score points by
+      using their hands to hit the ball over a net, trying to make the ball
+      touch the other team’s court. Volleyball is a best of 5, where each match
+      ends when a team reaches 25 points, except for the last match where it
+      ends at 15 points.
+    </h6>
+  </ion-text>
+
+  <ion-img src="/assets/img/vball-back1.png"></ion-img>
+  <ion-img src="/assets/img/vball-back2.png"></ion-img>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule" routerLink="/volleyball-rules">
+        <ion-icon name="reader-outline"></ion-icon>
+        <ion-label>Rules</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="speakers">
+        <ion-icon name="hand-right-outline"></ion-icon>
+        <ion-label>Skills</ion-label>
+        <ion-badge>2</ion-badge>
+        <!-- # of skills to be learned -->
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-icon name="videocam-outline"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Guides</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
