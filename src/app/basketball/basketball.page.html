@@ -1,17 +1,48 @@
 <ion-content>
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title size="large">Basketball</ion-title>
+      <ion-title class="ion-text-center" size="large">Basketball</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-fab vertical="top" horizontal="start" slot="fixed">
-      <ion-fab-button routerLink="/">
-        <ion-icon name="arrow-back-circle"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-    <h1>Description</h1>
-    <p>Basketball is a sport where two teams of five try to score by shooting a ball through a hoop that is elevated 10 feet above the ground. The team that scores the most points at the end of the game is the winner.</p>
-  </ion-content>
+  <ion-text color="dark"><h1>Description</h1></ion-text>
+  <ion-text>
+    <h6>
+      Basketball is a sport where two teams of five try to score by shooting a
+      ball through a hoop that is elevated 10 feet above the ground. The team
+      that scores the most points at the end of the game is the winner.
+    </h6>
+  </ion-text>
+
+  <ion-img src="/assets/img/bball-back1.png"></ion-img>
+  <ion-img src="/assets/img/bball-back2.png"></ion-img>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule" routerLink="/basketball-rules">
+        <ion-icon name="reader-outline"></ion-icon>
+        <ion-label>Rules</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="speakers">
+        <ion-icon name="hand-right-outline"></ion-icon>
+        <ion-label>Skills</ion-label>
+        <ion-badge>2</ion-badge>
+        <!-- # of skills to be learned -->
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-icon name="videocam-outline"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Guides</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

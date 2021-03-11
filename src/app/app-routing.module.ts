@@ -31,6 +31,18 @@ const routes: Routes = [
     path: 'volleyball-rules',
     loadChildren: () => import('./volleyball-rules/volleyball-rules.module').then( m => m.VolleyballRulesPageModule)
   },
+  {
+    path: 'tennis-rules',
+    loadChildren: () => import('./tennis-rules/tennis-rules.module').then( m => m.TennisRulesPageModule)
+  },
+  {
+    path: 'soccer-rules',
+    loadChildren: () => import('./soccer-rules/soccer-rules.module').then( m => m.SoccerRulesPageModule)
+  },
+  {
+    path: 'basketball-rules',
+    loadChildren: () => import('./basketball-rules/basketball-rules.module').then( m => m.BasketballRulesPageModule)
+  },
 ];
 
 @NgModule({

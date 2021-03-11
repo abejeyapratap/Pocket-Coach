@@ -1,15 +1,49 @@
 <ion-content>
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title size="large">Soccer</ion-title>
+      <ion-title class="ion-text-center" size="large" >Soccer</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-fab vertical="top" horizontal="start" slot="fixed">
-      <ion-fab-button routerLink="/">
-        <ion-icon name="arrow-back-circle"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </ion-content>
+  <ion-text color="dark"><h1>Description</h1></ion-text>
+  <ion-text>
+    <h6>
+      Soccer is a sport where two teams of eleven are trying to score points by
+      maneuvering the ball on the field into the other team's goal without using
+      their arms or hands (anything else is permitted). The team who scores the
+      most points after the game timer is the winner.
+    </h6>
+  </ion-text>
+
+  <ion-img src="/assets/img/soccer-back1.png"></ion-img>
+  <ion-img src="/assets/img/soccer-back2.png"></ion-img>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule" routerLink="/soccer-rules">
+        <ion-icon name="reader-outline"></ion-icon>
+        <ion-label>Rules</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="speakers">
+        <ion-icon name="hand-right-outline"></ion-icon>
+        <ion-label>Skills</ion-label>
+        <ion-badge>2</ion-badge>
+        <!-- # of skills to be learned -->
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-icon name="videocam-outline"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Guides</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

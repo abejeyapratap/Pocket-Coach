@@ -1,30 +1,28 @@
 <ion-content>
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title size="large">Volleyball</ion-title>
+      <ion-title class="ion-text-center" size="large">Tennis</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-  <!-- Back Button -->
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button routerLink="/">
-      <ion-icon name="arrow-back-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
   <ion-text color="dark"><h1>Description</h1></ion-text>
   <ion-text>
     <h6>
-      Tennis is a sport that can be played individually or with a team of two. Each player’s goal is to hit the tennis ball back and forth with a racquet until someone scores.
+      Tennis is a sport that can be played individually or with a team of two.
+      Each player’s goal is to hit the tennis ball back and forth with a racquet
+      until someone scores.
     </h6>
   </ion-text>
 
-  <ion-img src="/assets/img/vball-back1.png"></ion-img>
-  <ion-img src="/assets/img/vball-back2.png"></ion-img>
+  <ion-img src="/assets/img/tennis-back1.png"></ion-img>
+  <ion-img src="/assets/img/tennis-back2.png"></ion-img>
 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="schedule" routerLink="/volleyball-rules">
+      <ion-tab-button tab="schedule" routerLink="/tennis-rules">
         <ion-icon name="reader-outline"></ion-icon>
         <ion-label>Rules</ion-label>
       </ion-tab-button>
@@ -32,7 +30,7 @@
       <ion-tab-button tab="speakers">
         <ion-icon name="hand-right-outline"></ion-icon>
         <ion-label>Skills</ion-label>
-        <ion-badge>2</ion-badge>
+        <ion-badge>4</ion-badge>
         <!-- # of skills to be learned -->
       </ion-tab-button>
 
