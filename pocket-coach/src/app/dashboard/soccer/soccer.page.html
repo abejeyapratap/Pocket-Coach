@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>soccer</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<!-- Tab Content for Soccer -->
 <ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="soccer-rules">
+        <ion-label>Rules</ion-label>
+        <ion-icon name="reader-outline"></ion-icon>
+      </ion-tab-button>
 
+      <ion-tab-button tab="soccer-skills">
+        <ion-label>Skills</ion-label>
+        <ion-badge>2</ion-badge> <!-- # of skills to be learned -->
+        <ion-icon name="hand-right-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="soccer-home">
+        <ion-label>Home</ion-label>
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="soccer-videos">
+        <ion-icon name="videocam-outline"></ion-icon>
+        <ion-label>Videos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="soccer-guides">
+        <ion-label>Guides</ion-label>
+        <ion-icon name="information-circle"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

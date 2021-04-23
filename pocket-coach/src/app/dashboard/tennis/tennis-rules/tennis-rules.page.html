@@ -1,9 +1,117 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tennis-rules</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tennis Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Basic Rules</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>
+          The ball must be within the boundary lines at all times and if a
+          player hits the ball out of bounds, the opponent gets the point
+        </li>
+        <ul>
+          <li>
+            If the ball touches the boundary line, that is still considered in
+            bounds
+          </li>
+        </ul>
+        <li>
+          Players cannot touch the net or cross to the other side of the net
+        </li>
+        <li>Players cannot carry the ball or catch it with the racket</li>
+        <li>Players cannot hit the ball twice in a row</li>
+        <li>The ball must pass your side of the net before you can hit it</li>
+        <li>
+          If the ball bounces twice on your side before you hit it, your
+          opponent gets the points
+        </li>
+        <li>
+          Players must allow the serve to bounce first before returning it
+        </li>
+        <li>The first server is determined by a coin toss</li>
+        <li>
+          The server serves for the whole game and switches after each game
+        </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Scoring System</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>
+          There are 4 points per game and they increment from
+          Love(0)-15-30-40-Game
+        </li>
+        <ul>
+          <li>Everyone starts at Love(0)</li>
+          <li>Winner of the game is the one that reaches game</li>
+        </ul>
+        <li>Players must win by at least two points</li>
+        <ul>
+          <li>
+            For example, if both players are at 40-40, you must score 2
+            consecutive points to win
+          </li>
+        </ul>
+        <li>
+          The winner of the set is the first one to win 6 games with at least a
+          2 game lead
+        </li>
+        <li>If a set is at 6-6, you play a tie-break game</li>
+        <ul>
+          <li>
+            In the tie-break match, the winner is the first to reach 7 points
+            instead of 4 and must win by 2 points
+          </li>
+        </ul>
+        <li>A match is usually played as a best of 3 or best of 5 set</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Serving</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>
+          Foot Fault - When the server steps into the court or crosses the
+          center mark before they make contact the ball
+        </li>
+        <li>
+          Players must serve on the rights side of the court at the beginning of
+          each game and switch after each point
+        </li>
+        <li>
+          The goal is to serve the ball into the box that is diagonal to them.
+          The serve is good if the ball lands in that box which is called the
+          service box
+        </li>
+        <li>Players get two attempts per serve</li>
+        <li>
+          If the ball doesn’t land in the service box the first attempt, you get
+          to serve again
+        </li>
+        <ul>
+          <li>
+            If you fail to serve the ball in to the service box on the second
+            serve, the opponent gets the point
+          </li>
+        </ul>
+        <li>Players switch sides of the court every odd numbered game</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

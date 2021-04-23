@@ -1,9 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>dashboard</ion-title>
+  <!-- [translucent]="true"-->
+  <ion-toolbar color="primary">
+    <ion-title>Dashboard</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center ion-padding-top">
+        <ion-label color="dark">
+          <h1>Which Sport would you like to learn?</h1>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6">
+        <ion-card routerLink="./soccer" class="ion-text-center">
+          <img src="/assets/img/soccer.png" width="100%" />
+          <ion-card-header>
+            <ion-card-title>Soccer</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>Team sport</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="6">
+        <ion-card routerLink="./tennis" class="ion-text-center">
+          <img src="./assets/img/tennis.png" width="100%" />
+          <ion-card-header>
+            <ion-card-title>Tennis</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>Solo/Duo</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6">
+        <ion-card routerLink="./basketball" class="ion-text-center">
+          <img src="/assets/img/basketball.png" width="100%" />
+          <ion-card-header>
+            <ion-card-title>Basket ball</ion-card-title> <!-- leave as two words for formatting -->
+          </ion-card-header>
+          <ion-card-content>Team sport</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="6">
+        <ion-card routerLink="./volleyball" class="ion-text-center">
+          <img src="/assets/img/volleyball.png" width="100%" />
+          <ion-card-header>
+            <ion-card-title>Volley ball</ion-card-title> <!-- leave as two words for formatting -->
+          </ion-card-header>
+          <ion-card-content>Team sport</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

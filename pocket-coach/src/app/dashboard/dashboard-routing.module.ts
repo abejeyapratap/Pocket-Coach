@@ -6,24 +6,32 @@ import { DashboardPage } from './dashboard.page';
 const routes: Routes = [
   {
     path: '',
-    component: DashboardPage
-  },
-  {
-    path: 'basketball',
-    loadChildren: () => import('./basketball/basketball.module').then( m => m.BasketballPageModule)
+    component: DashboardPage,
   },
   {
     path: 'soccer',
-    loadChildren: () => import('./soccer/soccer.module').then( m => m.SoccerPageModule)
+    loadChildren: () =>
+      import('./soccer/soccer.module').then((m) => m.SoccerPageModule),
   },
   {
     path: 'tennis',
-    loadChildren: () => import('./tennis/tennis.module').then( m => m.TennisPageModule)
+    loadChildren: () =>
+      import('./tennis/tennis.module').then((m) => m.TennisPageModule),
+  },
+  {
+    path: 'basketball',
+    loadChildren: () =>
+      import('./basketball/basketball.module').then(
+        (m) => m.BasketballPageModule
+      ),
   },
   {
     path: 'volleyball',
-    loadChildren: () => import('./volleyball/volleyball.module').then( m => m.VolleyballPageModule)
-  }
+    loadChildren: () =>
+      import('./volleyball/volleyball.module').then(
+        (m) => m.VolleyballPageModule
+      ),
+  },
 ];
 
 @NgModule({
