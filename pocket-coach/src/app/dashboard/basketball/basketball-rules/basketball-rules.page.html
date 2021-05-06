@@ -1,83 +1,44 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Discover"
+      ></ion-back-button>
     </ion-buttons>
     <ion-title>Basketball Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Basic Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/img/basketball_shooting.png"></ion-img>
-      <ul>
-        <li>
-          When a team scores through a hoop, they receive two points and the
-          ball goes to the other team, if the score is made beyond the three-point arc, the basket is worth
-          three points
-        </li>
-        <li>
-          A foul is any type of illegal physical contact that includes hitting,
-          pushing, or holding
-        </li>
-        <li>
-            Any of these violations will result in a turnover, which is when you
-            give the other team the ball
-          </li>
-          <ul>
-            <li>
-              Walking or Travelling: Taking more than two steps without dribbling
-              the ball. 
-            </li>
-            <li>
-              Carrying or Palming: When you dribble the ball too far to the side
-              of the ball
-            </li>
-            <li>
-              Double Dribble: Dribbling the ball with both hands on the ball or
-              when you dribble, stop dribbling, then dribble again
-            </li>
-            <li>
-              Out of Bounds: If the offensive team was the last ones to touch the ball 
-              before going out of bounds, the ball would go to the other team
-            </li>
-        </ul>
-      </ul>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Advanced Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-img src="/assets/img/basketball_rules.png"></ion-img>
-      <ul>
-        <li>Technical Foul</li>
-         <ul>
-        <li>
-            When a player on the team or coaching staff causes an infraction
-            that doesn’t involve physical contact
-          </li>
-          <li>
-            These fouls include unsportsmanlike conduct, foul language, arguing,
-            and obscene gestures
-          </li>
-        </ul> 
-          <li>
-            Backcourt Violation: Once your team has passed the half court line,
-            you guys are not allowed to go back across the line unless it
-            was deflected by the other team
-          </li>
-          <li>
-            Time Restrictions: A team has 5 seconds to inbound the ball. They also 
-            have 24 seconds to attempt to score
-          </li>
-      </ul>
-    </ion-card-content>
-  </ion-card>
+  <ion-grid class="ion-no-padding ion-padding-horizontal">
+    <!-- option: text-center-->
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./basketball-basic">
+          <ion-img src="/assets/img/bball-basic.jpeg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Basic Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Master the fundamental rules such as throw-ins, penalties, and much
+            more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./basketball-advanced">
+          <ion-img src="/assets/img/bball-advanced.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Advanced Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Learn more about advanced rules such as off-sides, fouls, and more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-

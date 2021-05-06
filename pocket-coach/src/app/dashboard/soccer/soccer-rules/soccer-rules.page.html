@@ -1,63 +1,42 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Discover"
+      ></ion-back-button>
     </ion-buttons>
     <ion-title>Soccer Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Basic Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ul>
-        <ion-img src="/assets/img/soccer1.png"></ion-img>
-        <li>A match consists of two 45 minutes halves with a 15 minute rest period in between
-        </li>
-        <li>Maximum of 11 players (goalkeeper included), and a minimum of seven players is needed to constitute a match
-        </li>
-        <li>If the game is tied after the allotted 90 minutes, the match will continue in overtime: overtime consists of 30 minutes, with two 15 minute halves
-        </li>
-        <li>If the game is still tied after overtime, a penalty shootout will determine the winner
-        </li>
-        <li>In order for a goal to be counted, the whole ball must cross the goal line
-        </li>
-        <li>For fouls committed by a player, they could receive either a yellow or red card depending on the severity of the foul and the referee’s discretion.
-        <li>If the ball goes out of an opponent in either of the side lines then it is given as a throw in.
-        </li>
-        <ul>
-          <li>Throw in rules:</li>
-          <ul>
-            <li>Ball must be thrown from behind the head</li>
-            <li>Feet must be behind the line (one foot can be touching the line)</li>
-            <li>A ball cannot be scored directly from a throw in</li>
-            <ul>
-              <li>If it enters the goal, a goal kick is awarded</li>
-            </ul>
-          </ul>
-        </ul>
-      </ul>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Advanced Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ul>
-        <ion-img src="/assets/img/soccer2.png"></ion-img>
-        <li>Offside Rule</li>
-        <ul>
-          <li>The offensive player is offside if they are nearer to the opponent’s goal line than both the second and last opponent and the soccer ball</li>
-        </ul>
-        <li>If the ball goes out of play off an attacking player on the baseline then it is given as a goal kick</li>
-        <li>If a foul occur in the penalty area, the fouled team is awarded a penalty kick</li>
-        <li>Each team is only allowed to make a maximum of 3 substitutions. If a team uses all three substitutions and a player has to leave the field  for injury, the team will be forced to continue the game without having a replacement for the player
-        </li>
-      </ul>
-    </ion-card-content>
-  </ion-card>
-  </ion-content>
+  <ion-grid class="ion-no-padding ion-padding-horizontal"> <!-- option: text-center-->
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./soccer-basic">
+          <ion-img src="/assets/img/soccer-basic.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Basic Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Master the fundamental rules such as throw-ins, penalties, and much more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./soccer-advanced">
+          <ion-img src="/assets/img/soccer-advanced.jpeg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Advanced Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Learn more about advanced rules such as off-sides, fouls, and more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

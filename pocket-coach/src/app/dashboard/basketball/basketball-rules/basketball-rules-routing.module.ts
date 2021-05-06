@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: BasketballRulesPage
+  },
+  {
+    path: 'basketball-basic',
+    loadChildren: () => import('./basketball-basic/basketball-basic.module').then( m => m.BasketballBasicPageModule)
+  },
+  {
+    path: 'basketball-advanced',
+    loadChildren: () => import('./basketball-advanced/basketball-advanced.module').then( m => m.BasketballAdvancedPageModule)
   }
 ];
 
