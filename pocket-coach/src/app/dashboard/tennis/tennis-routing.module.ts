@@ -30,6 +30,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'tennis-skills',
+        loadChildren: () =>
+          import('./tennis-skills/tennis-skills.module').then(
+            (m) => m.TennisSkillsPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/tennis/tabs/tennis-home',
         pathMatch: 'full',

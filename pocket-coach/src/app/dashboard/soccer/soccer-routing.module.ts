@@ -30,6 +30,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'soccer-skills',
+        loadChildren: () =>
+          import('./soccer-skills/soccer-skills.module').then(
+            (m) => m.SoccerSkillsPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/soccer/tabs/soccer-home',
         pathMatch: 'full',

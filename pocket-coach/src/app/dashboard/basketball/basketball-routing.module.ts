@@ -30,6 +30,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'basketball-skills',
+        loadChildren: () =>
+          import('./basketball-skills/basketball-skills.module').then(
+            (m) => m.BasketballSkillsPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/basketball/tabs/basketball-home',
         pathMatch: 'full',

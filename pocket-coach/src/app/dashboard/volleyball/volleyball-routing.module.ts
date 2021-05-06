@@ -30,6 +30,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'volleyball-skills',
+        loadChildren: () =>
+          import('./volleyball-skills/volleyball-skills.module').then(
+            (m) => m.VolleyballSkillsPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/volleyball/tabs/volleyball-home',
         pathMatch: 'full',
