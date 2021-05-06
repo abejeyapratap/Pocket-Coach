@@ -6,18 +6,41 @@
     <ion-title>Basketball</ion-title>
   </ion-toolbar>
 </ion-header>
-  <ion-text color="dark" class="ion-text-center">
-    <h1>Description</h1>
-  </ion-text>
-  <ion-text class="ion-text-center">
-    <h6>
-      Basketball is a sport where two teams of five try to score by shooting a
-      ball through a hoop that is elevated 10 feet above the ground. The team
-      that scores the most points at the end of the game is the winner.
-    </h6>
-  </ion-text>
-  <ion-img src="/assets/img/bball-back1.png"></ion-img>
-  <ion-img src="/assets/img/bball-back2.png"></ion-img>
-<ion-content>
 
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col class="ion-text-center ion-no-padding-bottom">
+        <ion-card button>
+          <ion-card-header (click)="toggleDescription()">
+            <ion-item lines="none" color="none">
+              <ion-label class="ion-text-center">
+                <ion-card-title>Description</ion-card-title>
+              </ion-label>
+              <!-- <ion-icon name="chevron-down-outline" slot="end"></ion-icon> -->
+              <ion-icon
+                [name]="isVisible ? 'chevron-up-outline' : 'chevron-down-outline' "
+              ></ion-icon>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content *ngIf="isVisible">
+            Basketball is a sport where two teams of five try to score by
+            shooting a ball through a hoop that is elevated 10 feet above the
+            ground. The team that scores the most points at the end of the game
+            is the winner.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="/assets/img/bball-back1.png"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="/assets/img/bball-back2.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

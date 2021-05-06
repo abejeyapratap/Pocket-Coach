@@ -8,19 +8,40 @@
 </ion-header>
 
 <ion-content>
-  <ion-text color="dark" class="ion-text-center">
-    <h1>Description</h1>
-  </ion-text>
-  <ion-text class="ion-text-center">
-    <h6>
-      Volleyball is a sport where two teams of six are trying to score points by
-      using their hands to hit the ball over a net, trying to make the ball
-      touch the other team’s court. Volleyball is a best of 5, where each match
-      ends when a team reaches 25 points, except for the last match where it
-      ends at 15 points.
-    </h6>
-  </ion-text>
-
-  <ion-img src="/assets/img/vball-back1.png"></ion-img>
-  <ion-img src="/assets/img/vball-back2.png"></ion-img>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col class="ion-text-center ion-no-padding-bottom">
+        <ion-card button>
+          <ion-card-header (click)="toggleDescription()">
+            <ion-item lines="none" color="none">
+              <ion-label class="ion-text-center">
+                <ion-card-title>Description</ion-card-title>
+              </ion-label>
+              <!-- <ion-icon name="chevron-down-outline" slot="end"></ion-icon> -->
+              <ion-icon
+                [name]="isVisible ? 'chevron-up-outline' : 'chevron-down-outline' "
+              ></ion-icon>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content *ngIf="isVisible">
+            Volleyball is a sport where two teams of six are trying to score
+            points by using their hands to hit the ball over a net, trying to
+            make the ball touch the other team’s court. Volleyball is a best of
+            5, where each match ends when a team reaches 25 points, except for
+            the last match where it ends at 15 points.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="/assets/img/vball-back1.png"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="/assets/img/vball-back2.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

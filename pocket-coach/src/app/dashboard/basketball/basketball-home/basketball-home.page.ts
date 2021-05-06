@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basketball-home.page.scss'],
 })
 export class BasketballHomePage implements OnInit {
+  isVisible = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  toggleDescription() {
+    this.isVisible = !this.isVisible;
   }
-
 }
