@@ -1,9 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tennis-advanced</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard" text="Rules"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tennis Advanced Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Advanced Rules</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <ion-img src="/assets/img/tennis_score.png"></ion-img>
+        <li>Players must win by at least two points</li>
+        <ul>
+          <li>
+            For example, if both players are at 40-40, you must score 2
+            consecutive points to win
+          </li>
+        </ul>
+        <li>
+          The winner of the set is the first one to win 6 games with at least a
+          2 game lead
+        </li>
+        <li>If a set is at 6-6, you play a tie-break game</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

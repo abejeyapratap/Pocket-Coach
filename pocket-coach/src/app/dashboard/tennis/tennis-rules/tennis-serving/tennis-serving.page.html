@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tennis-serving</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard" text="Rules"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tennis Serving Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Serving Rules</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <ion-img src="/assets/img/tennis_serve.png"></ion-img>
+        <li>
+          Foot Fault - When the server steps into the court or crosses the
+          center mark before they make contact the ball
+        </li>
+        <li>
+          Players must serve on the rights side of the court at the beginning of
+          each game and switch after each point
+        </li>
+        <li>
+          You must serve the ball into the box diagonal to where you're serving
+        </li>
+        <li>
+          If the ball doesn’t land in the service box the first attempt, you get
+          to serve again
+        </li>
+        <ul>
+          <li>
+            If you fail to serve the ball in to the service box on the second
+            serve, the opponent gets the point
+          </li>
+        </ul>
+      </ul>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,9 +1,45 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tennis-basic</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard" text="Rules"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tennis Basic Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Basic Rules</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <ion-img src="/assets/img/tennis_lines.png"></ion-img>
+        <li>
+          The ball must be within the boundary lines at all times and if a
+          player hits the ball out of bounds, the opponent gets the point
+        </li>
+        <ul>
+          <li>
+            If the ball touches the boundary line, that is still considered in
+            bounds
+          </li>
+        </ul>
+        <li>
+          There are 4 points per game and they increment from
+          Love(0)-15-30-40-Game
+        </li>
+        <ul>
+          <li>Everyone starts at Love(0)</li>
+          <li>Winner of the game is the one that reaches game</li>
+        </ul>
+        <li>
+          Players must allow the serve to bounce first before returning it
+        </li>
+        <li>
+          The server serves for the whole game and switches after each game
+        </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
