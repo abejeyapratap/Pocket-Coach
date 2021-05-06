@@ -1,57 +1,44 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Discover"
+      ></ion-back-button>
     </ion-buttons>
     <ion-title>Volleyball Rules</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-        <ion-card-title>Basic Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ul>
-        <ion-img src="/assets/img/vball3.png"></ion-img>
-        <li>Maximum of 6 players are allowed on court per team, 3 on the front row, 3 on the back row</li>
-        <li>Maximum of 3 hits per side</li>
-        <li>A ball hitting the boundary lines is "in"</li>
-        <li>A ball is considered out if it hits</li>
-        <ul>
-          <li>An antenna</li>
-          <li>The floor outside the boundary line</li>
-          <li>The referee stand or pole</li>
-        </ul>
-          <li>Violations that will result in a point for the other team</li>
-          <ul>
-            <li>Stepping on or across the boundary line before you make contact with the ball</li>
-            <li>Contacting the ball illegally (catch, throw, hold)</li>
-            <li>Touching the net while ball is in play</li>
-            <li>Crossing the center courtline</li>
-            <li>Serving out of order</li>
-        </ul>
-      </ul>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Advanced Rules</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ul>
-        <ion-img src="/assets/img/vball2.png"></ion-img>
-        <li>
-          A back row player's body can not be above the net if they are blocking
-        </li>
-        <li>Overlapping (out of rotation)</li>
-        <li>A back row player can not attack a ball if it is completely above the net while positioned on or in front of the attack line
-        </li>
-        <li>If two or more player both contact the ball at the same time, it is considered as one touch and either player is allowed to contact the ball again
-        </li>
-        
-      </ul>
-    </ion-card-content>
-  </ion-card>
+  <ion-grid class="ion-no-padding ion-padding-horizontal">
+    <!-- option: text-center-->
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./volleyball-basic">
+          <ion-img src="/assets/img/soccer-basic.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Basic Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Master the fundamental rules such as throw-ins, penalties, and much
+            more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="./volleyball-advanced">
+          <ion-img src="/assets/img/soccer-advanced.jpeg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Advanced Rules</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Learn more about advanced rules such as off-sides, fouls, and more!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
