@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: BasketballSkillsPage
+  },
+  {
+    path: 'basketball-details',
+    loadChildren: () => import('./basketball-details/basketball-details.module').then( m => m.BasketballDetailsPageModule)
   }
 ];
 
