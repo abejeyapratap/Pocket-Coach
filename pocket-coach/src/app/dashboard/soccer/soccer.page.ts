@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SoccerSkillsService } from './soccer-skills.service';
 
 @Component({
   selector: 'app-soccer',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./soccer.page.scss'],
 })
 export class SoccerPage implements OnInit {
+  numSkills: number;
 
-  constructor() { }
+  constructor(private soccerSkillsService: SoccerSkillsService) {}
 
   ngOnInit() {
+    this.numSkills = this.soccerSkillsService.countSkills();
   }
-
 }

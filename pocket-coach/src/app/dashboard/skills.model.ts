@@ -12,7 +12,8 @@ export class Skill {
     public skillName: string,
     public skillId: string,
     public description: string,
-    public skillDetails: SkillDetails,
+    public skillImgUrl: string,
+    public skillDetailsObj: SkillDetails,
     public progress?: number
   ) {}
 }

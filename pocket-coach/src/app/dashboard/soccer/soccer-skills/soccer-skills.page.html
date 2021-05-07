@@ -15,6 +15,7 @@
     <ion-row *ngFor="let skillItem of fetchedSkillList">
       <ion-col>
         <ion-card button routerLink="./{{skillItem.skillId}}">
+          <ion-img [src]="skillItem.skillImgUrl"></ion-img>
           <ion-card-header>
             <ion-card-title>{{ skillItem.skillName }}</ion-card-title>
           </ion-card-header>
