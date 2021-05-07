@@ -11,5 +11,17 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-grid class="ion-no-padding ion-padding-horizontal">
+    <ion-row *ngFor="let skillItem of fetchedSkillList">
+      <ion-col>
+        <ion-card button routerLink="./{{skillItem.skillId}}">
+          <ion-img [src]="skillItem.skillImgUrl"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{ skillItem.skillName }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content> {{ skillItem.description }} </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
