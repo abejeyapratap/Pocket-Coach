@@ -22,6 +22,7 @@ export class SkillDetails {
   constructor(
     public skillInstructions: string[],
     public imageUrls: string[],
-    public skillTips: string[]
+    public skillTips: string[],
+    public skillEval: string[]
   ) {}
 }

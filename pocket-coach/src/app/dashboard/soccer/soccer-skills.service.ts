@@ -27,6 +27,12 @@ export class SoccerSkillsService {
           "Don't kick the ball too hard. You want to always be in control of the ball.",
           'Make sure that your arms are moving too. They help you keep balance as you move around.',
           'Different situations require different dribbling techniques',
+        ],
+        [
+          'Dribble down half the size of a soccer field without losing control of the ball while dribbling at a moderate pace 3 times.',
+          'Successfully complete drill 3 times without losing control (Around the square counts as 1). Place 10 soccer cones in a row with space in between them so that you can dribble through them. Use one foot to dribble the ball while using both the inside and outside of your shoe. Switch foot after you’re done.',
+          'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
+          'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.'
         ]
       )
     ),
@@ -40,7 +46,10 @@ export class SoccerSkillsService {
         [
           'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
         ],
-        ['Tip 1', 'Tip 2']
+        ['Tip 1', 'Tip 2'],
+        [
+          ''
+        ]
       )
     ),
     new Skill(
@@ -51,7 +60,10 @@ export class SoccerSkillsService {
       new SkillDetails(
         ['instruction 1', 'instruction 2'],
         ['image.png'],
-        ['Tip 1', 'Tip 2']
+        ['Tip 1', 'Tip 2'],
+        [
+          ''
+        ]
       )
     ),
   ];

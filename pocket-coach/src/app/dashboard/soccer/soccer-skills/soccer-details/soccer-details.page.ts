@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SoccerSkillsService } from '../../soccer-skills.service';
 import { Skill, SkillDetails } from '../../../skills.model';
-import { NavController } from '@ionic/angular';
+import { ModalController, NavController } from '@ionic/angular';
+import { SoccerEvaluationComponent } from './soccer-evaluation/soccer-evaluation.component';
 
 @Component({
   selector: 'app-soccer-details',
@@ -17,7 +18,8 @@ export class SoccerDetailsPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private soccerSkillsService: SoccerSkillsService,
-    private navCtrl: NavController
+    private navCtrl: NavController,
+    private modalCtrl: ModalController
   ) {}
 
   ngOnInit() {
@@ -34,5 +36,19 @@ export class SoccerDetailsPage implements OnInit {
 
   onSegmentChange(event: any) {
     this.currentSegment = event.detail.value;
+  }
+
+  onOpenEvaluationModal() {
+    this.modalCtrl
+      .create({
+        component: SoccerEvaluationComponent,
+        componentProps: {
+          skillName: this.currentSkill.skillName,
+          selfEvalList: this.currentSkill.skillDetailsObj.skillEval,
+        },
+      })
+      .then((modalEl) => {
+        modalEl.present();
+      });
   }
 }
