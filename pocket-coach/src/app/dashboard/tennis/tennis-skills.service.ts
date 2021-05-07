@@ -11,7 +11,7 @@ export class TennisSkillsService {
       'Serving',
       's1',
       'The shot to start a point. A player hits the ball with a racquet so that it will fall into the service box that is diagonally opposite to them',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/tennis_serve.jpg',
       new SkillDetails(
         [
           'Get in a good stance. You should be sideways to the net. Front foot should point in the direction of the net. Back foot should align with the front foot’s heel. The racquet should be at hip height .',
@@ -31,13 +31,14 @@ export class TennisSkillsService {
           'Place 3 cones in the service box; one in the middle, one on the right edge, and one on the left edge. Hit each cone once within 15 serves.',
 
         ]
-      )
+      ),
+      0
     ),
     new Skill(
       'Forehand',
       's2',
       'Technique that allows you to hit with effortless power while also maintaining high consistency in your shot.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/tennis_forehand.jpg',
       new SkillDetails(
         ['Predict where the ball will be going by looking at the movement of the opponent.', 'Get a grip of the racquet with your dominant hand. The wrist should be loose. Non dominant hand should be resting on the racket.',
          'Keep your legs shoulder width apart and comfortably bent','As the ball comes, pull your shoulder back and swing forward, hitting the ball back to the other side','Keep your eye on the ball until after you make contact with the ball'
@@ -47,13 +48,14 @@ export class TennisSkillsService {
         ],
         ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
         ['With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully']
-      )
+      ),
+      0
     ),
     new Skill(
       'Backhand',
       's3',
       'Technique that allows you to hit the ball on your weak side. For example, if you’re right handed and the ball comes to your left side, you would use a backhand .',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/backhand1.jpeg',
       new SkillDetails(
         ['Predict where the ball will be going by looking at the movement of the opponent.', 'Get a grip of the racquet with both your dominant hand and non dominant hand. Both wrists should be loose. Non dominant hand above dominant hand.',
           'Keep your legs shoulder width apart and comfortably bent', 'As the ball comes, keep your legs steady, twist you core, and release the core to hit the ball back to the other side',
@@ -62,7 +64,8 @@ export class TennisSkillsService {
         ['image.png'],
         ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
         ['With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully']
-      )
+      ),
+      0
     ),
   ];
 

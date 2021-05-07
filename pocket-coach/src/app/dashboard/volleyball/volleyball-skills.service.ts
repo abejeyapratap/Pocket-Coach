@@ -103,7 +103,7 @@ export class VolleyballSkillsService {
       'Serving',
       's4',
       'How every volley begins. It is one of the few actions within volleyball that is individual and not reliant on your own team.',
-      '/assets/img/vball-serving',
+      '/assets/img/vball-serving.jpg',
       new SkillDetails(
         [
           '(Standing Float) Stand with your feet about shoulder-width apart. Place the foot opposite of your hitting hand in front of the other foot.',

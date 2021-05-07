@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="volleyball">
     <ion-buttons slot="start">
       <ion-back-button
         defaultHref="/dashboard"
         text="Dashboard"
       ></ion-back-button>
     </ion-buttons>
-    <ion-title>Volleyball Skills</ion-title>
+    <ion-title>Skills</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,6 +17,10 @@
         <ion-card button routerLink="./{{skillItem.skillId}}">
           <ion-img [src]="skillItem.skillImgUrl"></ion-img>
           <ion-card-header>
+            <ion-card-subtitle
+              >Progress: {{ skillItem.progress }} / {{
+              skillItem.skillDetailsObj.skillEval.length }}</ion-card-subtitle
+            >
             <ion-card-title>{{ skillItem.skillName }}</ion-card-title>
           </ion-card-header>
           <ion-card-content> {{ skillItem.description }} </ion-card-content>

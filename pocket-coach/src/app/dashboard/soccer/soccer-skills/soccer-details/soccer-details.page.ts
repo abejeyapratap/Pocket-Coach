@@ -45,6 +45,8 @@ export class SoccerDetailsPage implements OnInit {
         componentProps: {
           skillName: this.currentSkill.skillName,
           selfEvalList: this.currentSkill.skillDetailsObj.skillEval,
+          // toggleList: this.currentSkill.skillDetailsObj.toggleState
+          // currentSkill: this.currentSkill
         },
       })
       .then((modalEl) => {

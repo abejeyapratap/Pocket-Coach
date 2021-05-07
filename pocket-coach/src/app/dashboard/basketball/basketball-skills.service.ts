@@ -11,7 +11,7 @@ export class BasketballSkillsService {
       'Dribbling',
       's1',
       'Bouncing the basketball on the floor continuously with one hand at a time. It is the only legal way a player is allowed to run or walk with the ball.',
-      '/assets/img/basketball_shooting',
+      '/assets/img/basketball_dribbling.jpg',
       new SkillDetails(
         [
           'Get in a low stance. This allows for less travel between your hands and the ground. Making it harder for the defender to steal the ball.',
@@ -39,7 +39,7 @@ export class BasketballSkillsService {
       'Shooting',
       's2',
       'One of the most important skills in basketball. Shooting allows you to score anywhere on the court.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/basketball_shooting.png',
       new SkillDetails(
         [
           'Keep your feet no further than shoulder width apart. This allows for good balance.',
@@ -68,7 +68,7 @@ export class BasketballSkillsService {
       'Passing',
       's3',
       'One of the most basic moves in basketball. Can be used to get the ball around a defender.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/basketballpass2.jpg',
       new SkillDetails(
         ['In a chest pass, hold the sides of the ball with both hands and keep your elbows tight nest to your torso.', 'Step out with one foot towards your target and simultaneously press your arms out.',
         'The pass should go straight out and arrive at a teammates chest level','In a bounce pass, the ball originates from the same area as the chest pass','Your aim should be towards the ground three fourth of the way between you and your teammate',

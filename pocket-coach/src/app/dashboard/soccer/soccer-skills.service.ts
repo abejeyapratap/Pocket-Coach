@@ -11,7 +11,7 @@ export class SoccerSkillsService {
       'Dribbling',
       's1',
       'Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/soccer-dribbling.jpg',
       new SkillDetails(
         [
           'Get in position by slightly bending your knees, and having the ball in front of you.',
@@ -23,7 +23,7 @@ export class SoccerSkillsService {
           'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
         ],
         [
-          'While you should be aware of where the ball is in relation to you, you shouldn’t keep your head down the entire time. Looking up allows you to know when to make passes and shots.',
+          "Be aware of where the ball is in relation to you, but don't keep your head down the entire time. Looking up allows you to know when to make passes and shots.",
           "Don't kick the ball too hard. You want to always be in control of the ball.",
           'Make sure that your arms are moving too. They help you keep balance as you move around.',
           'Different situations require different dribbling techniques',
@@ -33,7 +33,8 @@ export class SoccerSkillsService {
           'Successfully complete drill 3 times without losing control (Around the square counts as 1). Place 10 soccer cones in a row with space in between them so that you can dribble through them. Use one foot to dribble the ball while using both the inside and outside of your shoe. Switch foot after you’re done.',
           'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
           'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.',
-        ]
+        ],
+        [false, false, false, false]
       ),
       0
     ),
@@ -41,7 +42,7 @@ export class SoccerSkillsService {
       'Passing',
       's2',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/soccer-passing.jpg',
       new SkillDetails(
         [
           'The most basic type of pass is the “push pass,” which is used to get the ball directly to your teammate by kicking it across the ground.',
@@ -70,7 +71,7 @@ export class SoccerSkillsService {
       'Shooting',
       's3',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      '/assets/img/soccer-shooting.jpg',
       new SkillDetails(
         [
           'Take a step or two towards the ball for momentum.',
