@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TennisDetailsPageRoutingModule } from './tennis-details-routing.module';
 
 import { TennisDetailsPage } from './tennis-details.page';
+import { TennisEvaluationComponent } from './tennis-evaluation/tennis-evaluation.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TennisDetailsPageRoutingModule
+    TennisDetailsPageRoutingModule,
   ],
-  declarations: [TennisDetailsPage]
+  declarations: [TennisDetailsPage, TennisEvaluationComponent],
+  entryComponents: [TennisEvaluationComponent],
 })
 export class TennisDetailsPageModule {}

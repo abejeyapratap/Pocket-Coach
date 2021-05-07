@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TennisSkillsService } from '../tennis-skills.service';
+import { Skill } from '../../skills.model';
 
 @Component({
   selector: 'app-tennis-skills',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tennis-skills.page.scss'],
 })
 export class TennisSkillsPage implements OnInit {
+  fetchedSkillList: Skill[];
 
-  constructor() { }
+  constructor(private tennisSkillsService: TennisSkillsService) {}
 
   ngOnInit() {
+    this.fetchedSkillList = this.tennisSkillsService.basicSkillsList;
   }
-
 }
