@@ -40,7 +40,7 @@ export class SoccerSkillsService {
       'Passing',
       's2',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'img',
+      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
       new SkillDetails(
         ['instruction 1', 'instruction 2'],
         [
@@ -56,7 +56,7 @@ export class SoccerSkillsService {
       'Shooting',
       's3',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'img',
+      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
       new SkillDetails(
         ['instruction 1', 'instruction 2'],
         ['image.png'],
