@@ -11,6 +11,9 @@
 </ion-header>
 
 <ion-content>
+  <ion-toggle [(ngModel)]="checked"></ion-toggle>
+  <ion-text *ngIf="checked">Complete</ion-text>
+  <ion-text>{{ checkOff() }}</ion-text>
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -20,7 +23,6 @@
             <ion-item lines="none">
               <ion-label class="ion-text-wrap">{{ eval }}</ion-label>
             </ion-item>
-            <ion-button color="success">Complete</ion-button>
           </div>
         </ion-list>
       </ion-col>

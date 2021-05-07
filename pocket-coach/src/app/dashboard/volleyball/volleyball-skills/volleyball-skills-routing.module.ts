@@ -9,7 +9,7 @@ const routes: Routes = [
     component: VolleyballSkillsPage
   },
   {
-    path: 'volleyball-details',
+    path: ':skillId',
     loadChildren: () => import('./volleyball-details/volleyball-details.module').then( m => m.VolleyballDetailsPageModule)
   }
 ];

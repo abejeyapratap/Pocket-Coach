@@ -17,6 +17,10 @@
         <ion-card button routerLink="./{{skillItem.skillId}}">
           <ion-img [src]="skillItem.skillImgUrl"></ion-img>
           <ion-card-header>
+            <ion-card-subtitle
+              >Progress: {{ skillItem.progress }} / {{
+              skillItem.skillDetailsObj.skillEval.length }}</ion-card-subtitle
+            >
             <ion-card-title>{{ skillItem.skillName }}</ion-card-title>
           </ion-card-header>
           <ion-card-content> {{ skillItem.description }} </ion-card-content>

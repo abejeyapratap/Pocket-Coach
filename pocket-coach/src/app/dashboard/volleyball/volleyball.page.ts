@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VolleyballSkillsService } from './volleyball-skills.service';
 
 @Component({
   selector: 'app-volleyball',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./volleyball.page.scss'],
 })
 export class VolleyballPage implements OnInit {
+  numSkills: number;
 
-  constructor() { }
+  constructor(private volleyballSkillsService: VolleyballSkillsService) {}
 
   ngOnInit() {
+    this.numSkills = this.volleyballSkillsService.countSkills();
   }
-
 }

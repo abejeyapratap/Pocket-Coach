@@ -10,57 +10,74 @@ export class BasketballSkillsService {
     new Skill(
       'Dribbling',
       's1',
-      'Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      'Bouncing the basketball on the floor continuously with one hand at a time. It is the only legal way a player is allowed to run or walk with the ball.',
+      '/assets/img/basketball_shooting',
       new SkillDetails(
         [
-          'Get in position by slightly bending your knees, and having the ball in front of you.',
-          'As a beginner, use the inside of your shoes to dribble the ball. This way of dribbling gives you the most control. You want to be in control of the ball at all times.',
-          'As you run, slightly tap the ball with your shoe. Try to keep the ball in control and close to you as you move. This makes it harder for defenders to take possession from you.',
-          'Once you learn how to control the ball with the inside of your shoes, practice using the outside and the front of your shoes.',
+          'Get in a low stance. This allows for less travel between your hands and the ground. Making it harder for the defender to steal the ball.',
+          'Using your fingertips and not your palm, bounce the ball on the ground. Using your fingertips allows for more control and uses less arm strength.',
+          'Keep your hands on top of the ball. You should have full control of the ball at all times. Make sure your palm is always directly above the ball .',
         ],
         [
           'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
         ],
         [
-          'While you should be aware of where the ball is in relation to you, you shouldn’t keep your head down the entire time. Looking up allows you to know when to make passes and shots.',
-          "Don't kick the ball too hard. You want to always be in control of the ball.",
-          'Make sure that your arms are moving too. They help you keep balance as you move around.',
-          'Different situations require different dribbling techniques',
+          'Keep your head up. Try not to look at the ball when dribbling. It allows you to look for open teammates and also keep an eye on the defender.',
+          "Don’t stop dribbling until you know that you’re going to shoot it or pass it. If you stop dribbling, you are no longer allowed to dribble again.",
+          'Try to keep the ball low. The lower the ball, the harder it is for the defender to steal the ball.',
         ],
         [
-          'Dribble down half the size of a soccer field without losing control of the ball while dribbling at a moderate pace 3 times.',
-          'Successfully complete drill 3 times without losing control (Around the square counts as 1). Place 10 soccer cones in a row with space in between them so that you can dribble through them. Use one foot to dribble the ball while using both the inside and outside of your shoe. Switch foot after you’re done.',
-          'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
-          'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.',
+          'Dribble the ball 15 times without losing control of the ball with each hand (30 times total).',
+          'Dribble the ball 15 times without looking at the ball with each hand (30 times total).',
+          'Dribble the ball while walking around the court for 25 seconds (no looking at the ball and remain full control).',
+          'Dribble the ball while running around the court 15 seconds (no looking at the ball and remain full control).',
         ]
-      )
-    ),
-    new Skill(
-      'Passing',
-      's2',
-      'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
-      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
-      new SkillDetails(
-        ['instruction 1', 'instruction 2'],
-        [
-          'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
-        ],
-        ['Tip 1', 'Tip 2'],
-        ['']
-      )
+      ),
+      0
     ),
     new Skill(
       'Shooting',
-      's3',
-      'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
+      's2',
+      'One of the most important skills in basketball. Shooting allows you to score anywhere on the court.',
       'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
       new SkillDetails(
-        ['instruction 1', 'instruction 2'],
+        [
+          'Keep your feet no further than shoulder width apart. This allows for good balance.',
+          'Locate the rim as early as possible and focus on it and not the ball. This allows for better accuracy.',
+          'Flex your knees slightly. Helps keep balance and also puts you in position to jump as soon as you have the ball.',
+          'As you go up for the jump shot, push the ball with your shooting hand while your guide hand is on the side of the ball. The guide hand should not add force to the ball',
+          'In one motion, jump while releasing the ball at the peak of the jump',
+        ],
+        [
+          'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
+        ],
+        [
+          'Hold your follow through. This is when you release the ball, you continue to extend the arm and keep the wrist motion. When the shot is complete, your hands should resemble the shape of a swan.',
+          "Position your elbow so that it’s inline with your shoulder. This will help with the accuracy of the shot.",
+          'When you catch the ball, dip the ball down to your waist. In one motion go up for the shot. This gives you more power and momentum for longer shots.',
+        ],
+        [
+          'Make 3 shots in a row from 4-6 feet away from the basket.',
+          'Make 6 out of 10 free throws (15 feet from the basket).',
+          'Make 2 out of 4 three pointers (around 22 feet from the basket).',
+        ]
+      ),
+      0
+    ),
+    new Skill(
+      'Passing',
+      's3',
+      'One of the most basic moves in basketball. Can be used to get the ball around a defender.',
+      'https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Kids/Galleries/4+Drills/Slide-1$!2c2.jpg',
+      new SkillDetails(
+        ['In a chest pass, hold the sides of the ball with both hands and keep your elbows tight nest to your torso.', 'Step out with one foot towards your target and simultaneously press your arms out.',
+        'The pass should go straight out and arrive at a teammates chest level','In a bounce pass, the ball originates from the same area as the chest pass','Your aim should be towards the ground three fourth of the way between you and your teammate',
+        'Pass the ball hard enough to where your teammate receives the ball at waist level'],
         ['image.png'],
-        ['Tip 1', 'Tip 2'],
-        ['']
-      )
+        ['Always look for open teammates on the court to pass it to', 'You could try to fake a pass to trick the defender', 'Try to predict where the defender is going and pass accordingly'],
+        ['Do 20 successful chest passes in a row (pass it to a wall or another person)','Do 20 successful bounce passes in a row (pass it to a wall or another person']
+      ),
+      0
     ),
   ];
 
