@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketballSkillsService } from './basketball-skills.service';
 
 @Component({
   selector: 'app-basketball',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basketball.page.scss'],
 })
 export class BasketballPage implements OnInit {
+  numSkills: number;
 
-  constructor() { }
+  constructor(private basketballSkillsService: BasketballSkillsService) {}
 
   ngOnInit() {
+    this.numSkills = this.basketballSkillsService.countSkills();
   }
-
 }

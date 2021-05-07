@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { SoccerSkillsService } from '../../soccer-skills.service';
-import { Skill, SkillDetails } from '../../../skills.model';
+import { ActivatedRoute } from '@angular/router';
+import { Skill } from '../../../skills.model';
 import { ModalController, NavController } from '@ionic/angular';
 import { SoccerEvaluationComponent } from './soccer-evaluation/soccer-evaluation.component';
 

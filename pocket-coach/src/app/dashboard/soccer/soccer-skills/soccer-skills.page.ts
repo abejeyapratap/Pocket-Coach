@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill, SkillDetails } from '../../skills.model';
+import { Skill } from '../../skills.model';
 import { SoccerSkillsService } from '../soccer-skills.service';
 
 @Component({

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BasketballDetailsPageRoutingModule } from './basketball-details-routing.module';
 
 import { BasketballDetailsPage } from './basketball-details.page';
+import { BasketballEvaluationComponent } from './basketball-evaluation/basketball-evaluation.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BasketballDetailsPage } from './basketball-details.page';
     IonicModule,
     BasketballDetailsPageRoutingModule
   ],
-  declarations: [BasketballDetailsPage]
+  declarations: [BasketballDetailsPage, BasketballEvaluationComponent],
+  entryComponents: [BasketballEvaluationComponent]
 })
 export class BasketballDetailsPageModule {}

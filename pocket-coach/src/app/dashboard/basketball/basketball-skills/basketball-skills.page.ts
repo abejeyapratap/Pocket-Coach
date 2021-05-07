@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from '../../skills.model';
+import { BasketballSkillsService } from '../basketball-skills.service';
 
 @Component({
   selector: 'app-basketball-skills',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basketball-skills.page.scss'],
 })
 export class BasketballSkillsPage implements OnInit {
+  fetchedSkillList: Skill[];
 
-  constructor() { }
+  constructor(private basketballSkillsService: BasketballSkillsService) {}
 
   ngOnInit() {
+    this.fetchedSkillList = this.basketballSkillsService.basicSkillsList;
   }
-
 }
