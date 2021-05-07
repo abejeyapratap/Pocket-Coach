@@ -1,11 +1,3 @@
-/* // Define how Skills tab should be structured
-export class Skills {
-  constructor(
-    public basicSkillList: SkillList[],
-    public advancedSkillList?: SkillList[]
-  ) {}
-} */
-
 // Define how each Skill should look like
 export class Skill {
   constructor(
