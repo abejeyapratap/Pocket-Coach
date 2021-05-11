@@ -1,3 +1,10 @@
+/**
+ * File name: basketball-skills.service.ts
+ * Purpose: Store data about Basketball Skills and provide it in other components
+ * Date: 5/6/21
+ * Author(s): Abe Jeyapratap (aj928), Brian Su
+ */
+
 import { Injectable } from '@angular/core';
 import { Skill, SkillDetails } from '../skills.model';
 

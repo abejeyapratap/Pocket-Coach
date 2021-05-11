@@ -1,3 +1,10 @@
+/**
+ * File name: soccer-skills.service.ts
+ * Purpose: Store data about Soccer Skills and provide it in other components
+ * Date: 5/5/21
+ * Author(s): Abe Jeyapratap (aj928), Wyman Li
+ */
+
 import { Injectable } from '@angular/core';
 import { Skill, SkillDetails } from '../skills.model';
 
@@ -102,8 +109,8 @@ export class SoccerSkillsService {
 
   constructor() {}
 
+  // return a copy; not OG
   get basicSkillsList() {
-    // return a copy; not OG
     return [...this._basicSkillList];
   }
 

@@ -1,3 +1,10 @@
+/**
+ * File name: volleyball-skills.service.ts
+ * Purpose: Store data about Volleyball Skills and provide it in other components
+ * Date: 5/6/21
+ * Author(s): Abe Jeyapratap (aj928), Nicholas Hom
+ */
+
 import { Injectable } from '@angular/core';
 import { Skill, SkillDetails } from '../skills.model';
 

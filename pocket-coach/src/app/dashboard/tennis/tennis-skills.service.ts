@@ -1,3 +1,10 @@
+/**
+ * File name: tennis-skills.service.ts
+ * Purpose: Store data about Tennis Skills and provide it in other components
+ * Date: 5/5/21
+ * Author(s): Abe Jeyapratap (aj928), Wyman Li, Brian Su
+ */
+
 import { Injectable } from '@angular/core';
 import { Skill, SkillDetails } from '../skills.model';
 

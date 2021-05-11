@@ -1,3 +1,10 @@
+/**
+ * File name: dashboard-routing.module.ts
+ * Purpose: Routing configuration for all pages from our Sports Dashboard
+ * Date: 4/7/21
+ * Author(s): Abe Jeyapratap (aj928)
+ */
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

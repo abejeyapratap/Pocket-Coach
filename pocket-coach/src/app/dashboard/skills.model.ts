@@ -1,4 +1,10 @@
-// Define how each Skill should look like
+/**
+ * File name: skills.model.ts
+ * Purpose: Define how each Skill should look like
+ * Date: 5/5/21
+ * Author(s): Abe Jeyapratap (aj928)
+ */
+
 export class Skill {
   constructor(
     public skillName: string,
