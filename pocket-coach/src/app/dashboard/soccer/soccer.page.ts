@@ -1,3 +1,10 @@
+/**
+ * File name: soccer.page.ts
+ * Purpose: Soccer Tabs layout (w/ Skill count)
+ * Date: 4/17/21
+ * Author(s): Abe Jeyapratap (aj928)
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { SoccerSkillsService } from './soccer-skills.service';
 

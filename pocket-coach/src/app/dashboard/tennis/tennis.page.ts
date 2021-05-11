@@ -1,3 +1,10 @@
+/**
+ * File name: tennis.page.ts
+ * Purpose: Tennis Tabs layout (w/ Skill count)
+ * Date: 4/17/21
+ * Author(s): Abe Jeyapratap (aj928)
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { TennisSkillsService } from './tennis-skills.service';
 
