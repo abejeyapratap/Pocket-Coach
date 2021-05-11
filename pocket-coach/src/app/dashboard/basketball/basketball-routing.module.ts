@@ -1,3 +1,10 @@
+/**
+ * File name: basketball-routing.moudle.ts
+ * Purpose: Routing configuration for each tab in the tabs layout
+ * Date: 4/16/21
+ * Author(s): Abe Jeyapratap (aj928)
+ */
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
