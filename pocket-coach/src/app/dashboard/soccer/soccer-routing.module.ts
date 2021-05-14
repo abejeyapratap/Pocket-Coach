@@ -1,5 +1,5 @@
 /**
- * File name: soccer-routing.moudle.ts
+ * File name: soccer-routing.module.ts
  * Purpose: Routing configuration for each tab in the tabs layout
  * Date: 5/14/21
  * Author(s): Abe Jeyapratap

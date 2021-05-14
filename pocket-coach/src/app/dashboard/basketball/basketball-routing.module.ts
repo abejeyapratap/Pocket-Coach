@@ -1,5 +1,5 @@
 /**
- * File name: basketball-routing.moudle.ts
+ * File name: basketball-routing.module.ts
  * Purpose: Routing configuration for each tab in the tabs layout
  * Date: 5/14/21
  * Author(s): Abe Jeyapratap
