@@ -44,6 +44,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'basketball-guides',
+        loadChildren: () =>
+          import('./basketball-guides/basketball-guides.module').then(
+            (m) => m.BasketballGuidesPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/basketball/tabs/basketball-home',
         pathMatch: 'full',
