@@ -44,6 +44,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'tennis-guides',
+        loadChildren: () =>
+          import('./tennis-guides/tennis-guides.module').then(
+            (m) => m.TennisGuidesPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/tennis/tabs/tennis-home',
         pathMatch: 'full',
