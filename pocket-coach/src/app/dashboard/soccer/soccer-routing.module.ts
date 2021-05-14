@@ -44,6 +44,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'soccer-guides',
+        loadChildren: () =>
+          import('./soccer-guides/soccer-guides.module').then(
+            (m) => m.SoccerGuidesPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/soccer/tabs/soccer-home',
         pathMatch: 'full',
