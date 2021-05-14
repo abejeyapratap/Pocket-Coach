@@ -2,7 +2,7 @@
  * File name: skills.model.ts
  * Purpose: Define how each Skill should look like
  * Date: 5/5/21
- * Author(s): Abe Jeyapratap (aj928)
+ * Author(s): Abe Jeyapratap
  */
 
 export class Skill {

@@ -2,7 +2,7 @@
  * File name: soccer-skills.service.ts
  * Purpose: Store data about Soccer Skills and provide it in other components
  * Date: 5/5/21
- * Author(s): Abe Jeyapratap (aj928), Wyman Li
+ * Author(s): Abe Jeyapratap, Wyman Li
  */
 
 import { Injectable } from '@angular/core';

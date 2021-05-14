@@ -1,3 +1,10 @@
+/**
+ * File name: volleyball-home.page.ts
+ * Purpose: Home page with Description Toggle
+ * Date: 5/4/21
+ * Author(s): Abe Jeyapratap
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

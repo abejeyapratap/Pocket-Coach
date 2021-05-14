@@ -1,8 +1,8 @@
 /**
  * File name: soccer-routing.moudle.ts
  * Purpose: Routing configuration for each tab in the tabs layout
- * Date: 4/16/21
- * Author(s): Abe Jeyapratap (aj928)
+ * Date: 5/14/21
+ * Author(s): Abe Jeyapratap
  */
 
 import { NgModule } from '@angular/core';

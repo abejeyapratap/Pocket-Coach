@@ -2,7 +2,7 @@
  * File name: app-routing.module.ts
  * Purpose: Root routing configuration for the app
  * Date: 4/7/21
- * Author(s): Abe Jeyapratap (aj928)
+ * Author(s): Abe Jeyapratap
  */
 
 import { NgModule } from '@angular/core';
@@ -12,18 +12,19 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/dashboard',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardPageModule),
   },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
