@@ -44,6 +44,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'volleyball-guides',
+        loadChildren: () =>
+          import('./volleyball-guides/volleyball-guides.module').then(
+            (m) => m.VolleyballGuidesPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/dashboard/volleyball/tabs/volleyball-home',
         pathMatch: 'full',
