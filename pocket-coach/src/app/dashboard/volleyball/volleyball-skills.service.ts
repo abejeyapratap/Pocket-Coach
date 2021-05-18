@@ -84,7 +84,6 @@ export class VolleyballSkillsService {
       new SkillDetails(
         [
           'If you’re right handed, your approach should follow: small right leg, small left leg, and quick and big right and left leg.',
-          'instruction 2',
           'While doing the approach, your arms should be behind your back to add momentum to your jump.',
           'On your final step, jump as high as you can vertically, bringing both your arms into the air.',
           'Use your non-hitting hand to aim for the ball, and bring your hitting hand back to your ear and elbows facing 90 degrees upwards.',
