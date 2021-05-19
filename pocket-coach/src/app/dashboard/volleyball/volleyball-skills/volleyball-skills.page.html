@@ -15,7 +15,7 @@
     <ion-row *ngFor="let skillItem of fetchedSkillList">
       <ion-col>
         <ion-card button routerLink="./{{skillItem.skillId}}">
-          <img [src]="skillItem.skillImgUrl"> <!-- used to be ion-img but that's causing lazy loading issues -->
+          <ion-img [src]="skillItem.skillImgUrl"></ion-img> <!-- used to be ion-img but that's causing lazy loading issues -->
           <ion-card-header>
             <ion-card-subtitle
               >Progress: {{ skillItem.progress }} / {{

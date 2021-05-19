@@ -96,3 +96,12 @@
     --ion-color-shade: var(--ion-color-basketball-shade);
     --ion-color-tint: var(--ion-color-basketball-tint);
 }
+
+/**
+  * Bug fix for ion-img
+  */
+:root {
+  ion-img {
+    min-height: 1px !important;
+  }
+}
