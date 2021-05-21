@@ -1,4 +1,11 @@
-/*
+/**
+ * File name: global.scss
+ * Purpose: Store global styling info for Ionic
+ * Date: 5/21/21
+ * Author(s): Abe Jeyapratap
+ */
+
+ /*
  * App Global CSS
  * ----------------------------------------------------------------------------
  * Put style rules here that you want to apply globally. These styles are for
@@ -24,78 +31,6 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-
-:root {
-    --ion-color-volleyball: #115494;
-    --ion-color-volleyball-rgb: 17,84,148;
-    --ion-color-volleyball-contrast: #ffffff;
-    --ion-color-volleyball-contrast-rgb: 255,255,255;
-    --ion-color-volleyball-shade: #0f4a82;
-    --ion-color-volleyball-tint: #29659f;
-}
-
-.ion-color-volleyball {
-    --ion-color-base: var(--ion-color-volleyball);
-    --ion-color-base-rgb: var(--ion-color-volleyball-rgb);
-    --ion-color-contrast: var(--ion-color-volleyball-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-volleyball-contrast-rgb);
-    --ion-color-shade: var(--ion-color-volleyball-shade);
-    --ion-color-tint: var(--ion-color-volleyball-tint);
-}
-
-:root {
-    --ion-color-tennis: #007e08;
-    --ion-color-tennis-rgb: 0,126,8;
-    --ion-color-tennis-contrast: #ffffff;
-    --ion-color-tennis-contrast-rgb: 255,255,255;
-    --ion-color-tennis-shade: #006f07;
-    --ion-color-tennis-tint: #1a8b21;
-}
-
-.ion-color-tennis {
-    --ion-color-base: var(--ion-color-tennis);
-    --ion-color-base-rgb: var(--ion-color-tennis-rgb);
-    --ion-color-contrast: var(--ion-color-tennis-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-tennis-contrast-rgb);
-    --ion-color-shade: var(--ion-color-tennis-shade);
-    --ion-color-tint: var(--ion-color-tennis-tint);
-}
-
-:root {
-    --ion-color-soccer: #5b0909;
-    --ion-color-soccer-rgb: 91,9,9;
-    --ion-color-soccer-contrast: #ffffff;
-    --ion-color-soccer-contrast-rgb: 255,255,255;
-    --ion-color-soccer-shade: #500808;
-    --ion-color-soccer-tint: #6b2222;
-}
-
-.ion-color-soccer {
-    --ion-color-base: var(--ion-color-soccer);
-    --ion-color-base-rgb: var(--ion-color-soccer-rgb);
-    --ion-color-contrast: var(--ion-color-soccer-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-soccer-contrast-rgb);
-    --ion-color-shade: var(--ion-color-soccer-shade);
-    --ion-color-tint: var(--ion-color-soccer-tint);
-}
-
-:root {
-    --ion-color-basketball: #ae4a00;
-    --ion-color-basketball-rgb: 174,74,0;
-    --ion-color-basketball-contrast: #ffffff;
-    --ion-color-basketball-contrast-rgb: 255,255,255;
-    --ion-color-basketball-shade: #994100;
-    --ion-color-basketball-tint: #b65c1a;
-}
-
-.ion-color-basketball {
-    --ion-color-base: var(--ion-color-basketball);
-    --ion-color-base-rgb: var(--ion-color-basketball-rgb);
-    --ion-color-contrast: var(--ion-color-basketball-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-basketball-contrast-rgb);
-    --ion-color-shade: var(--ion-color-basketball-shade);
-    --ion-color-tint: var(--ion-color-basketball-tint);
-}
 
 /**
   * Bug fix for ion-img
