@@ -1,0 +1,7 @@
+ion-tab-bar {
+  --background: transparent;
+  background-image: linear-gradient(to right, var(--ion-basketball-dark) 0%, var(--ion-basketball-light) 100%);
+}
+ion-tab-button {
+   --color: var(--ion-color-step-700);
+}

@@ -1,0 +1,18 @@
+ion-tab-bar {
+  // --background: var(--ion-color-tennis-shade);
+  --background: transparent;
+  background-image: linear-gradient(to right, var(--ion-tennis-dark) 0%, var(--ion-tennis-light) 100%);
+}
+ion-tab-button {
+  //  --color: var(--ion-color-light);
+  //  --color: #ccd2e4;
+  //  --color-selected: var(--ion-color-step-200);
+  //  --color-selected: #0f3a83;
+  --color: var(--ion-color-step-700);
+}
+
+/*  ion-content {
+  --ion-background-color: var(--ion-color-tennis-shade);
+  --ion-background-color-rgb: 70, 190, 118;
+ } */
+
