@@ -1,0 +1,26 @@
+[
+  {
+    "soccer": [
+      {
+        "equipId": 1,
+        "equipName": "Shoes",
+        "equipDescription": "Learn more about Shoes!",
+        "equipImgUrl": "/assets/img/",
+        "equipDetails": [
+          "Soccer cleats are designed to be comfortable and extremely lightweight to aid in running up and down the field. Their shape also makes for optimized ball contact.",
+          "For soccer cleats, you want a tight fit. This is to prevent accidentally sliding or slipping when running across the field.",
+          "For a good measuring size, choose cleats that are no more than ¼” longer than your longest foot because soccer shoes that are too big for your foot can put a player at risk of injury."
+        ]
+      },
+      {
+        "equipId": 2,
+        "equipName": "Ball Size",
+        "equipDescription": "Learn more about Ball Sizes!",
+        "equipImgUrl": "/assets/img/",
+        "equipDetails": [
+          ""
+        ]
+      }
+    ]
+  }
+]

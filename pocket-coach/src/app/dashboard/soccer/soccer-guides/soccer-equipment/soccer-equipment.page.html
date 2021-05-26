@@ -1,0 +1,34 @@
+<!--
+  File name: soccer-equipment.page.html
+  Purpose: Equipment-specific page for Sport
+  Date: 5/25/21
+  Author(s): Abe Jeyapratap
+ -->
+ <ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Guides"
+        color="light"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Soccer Equipment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row *ngFor="let equipment of fetchedEquipList">
+    <ion-col>
+      <ion-card button routerLink="./{{ equipment.equipId }}">
+        <ion-img [src]="equipment.equipImgUrl"></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{ equipment.equipName }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>{{ equipment.equipDescription }}</ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

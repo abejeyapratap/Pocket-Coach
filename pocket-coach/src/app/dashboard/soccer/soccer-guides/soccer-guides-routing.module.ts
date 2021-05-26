@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: SoccerGuidesPage
+  },
+  {
+    path: 'soccer-size',
+    loadChildren: () => import('./soccer-size/soccer-size.module').then( m => m.SoccerSizePageModule)
+  },
+  {
+    path: 'soccer-equipment',
+    loadChildren: () => import('./soccer-equipment/soccer-equipment.module').then( m => m.SoccerEquipmentPageModule)
   }
 ];
 
