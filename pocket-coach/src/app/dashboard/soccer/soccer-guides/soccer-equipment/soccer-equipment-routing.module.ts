@@ -9,10 +9,10 @@ const routes: Routes = [
     component: SoccerEquipmentPage,
   },
   {
-    path: ':equipDetailId',
+    path: ':equipId',
     loadChildren: () =>
-      import('./equipment-details/equipment-details.module').then(
-        (m) => m.EquipmentDetailsPageModule
+      import('./soccer-equipment-info/soccer-equipment-info.module').then(
+        (m) => m.SoccerEquipmentInfoPageModule
       ),
   },
 ];

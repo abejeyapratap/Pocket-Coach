@@ -6,16 +6,22 @@ import { SoccerGuidesPage } from './soccer-guides.page';
 const routes: Routes = [
   {
     path: '',
-    component: SoccerGuidesPage
+    component: SoccerGuidesPage,
   },
   {
     path: 'soccer-size',
-    loadChildren: () => import('./soccer-size/soccer-size.module').then( m => m.SoccerSizePageModule)
+    loadChildren: () =>
+      import('./soccer-size/soccer-size.module').then(
+        (m) => m.SoccerSizePageModule
+      ),
   },
   {
     path: 'soccer-equipment',
-    loadChildren: () => import('./soccer-equipment/soccer-equipment.module').then( m => m.SoccerEquipmentPageModule)
-  }
+    loadChildren: () =>
+      import('./soccer-equipment/soccer-equipment.module').then(
+        (m) => m.SoccerEquipmentPageModule
+      ),
+  },
 ];
 
 @NgModule({

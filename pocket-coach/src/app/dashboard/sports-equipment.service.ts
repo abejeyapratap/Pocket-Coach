@@ -10,13 +10,11 @@ export class SportsEquipmentService {
   constructor() {}
 
   get soccerEquip() {
-    return this._soccerEquip;
+    return [...this._soccerEquip];
   }
 
   // find the equipment with particular ID and return that equipment's details
-  getEquipDetails(id: number) {
-    return this._soccerEquip.find((equipObj) => {
-      equipObj.equipId === id;
-    }).equipDetails;
+  getSoccerEquipItem(id: string) {
+    return { ...this._soccerEquip.find((equipObj) => equipObj.equipId === id) };
   }
 }

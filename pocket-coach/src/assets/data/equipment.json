@@ -2,9 +2,9 @@
   {
     "soccer": [
       {
-        "equipId": 1,
+        "equipId": "s1",
         "equipName": "Shoes",
-        "equipDescription": "Learn more about Shoes!",
+        "equipDescription": "Learn more about Cleats!",
         "equipImgUrl": "/assets/img/",
         "equipDetails": [
           "Soccer cleats are designed to be comfortable and extremely lightweight to aid in running up and down the field. Their shape also makes for optimized ball contact.",
@@ -13,7 +13,7 @@
         ]
       },
       {
-        "equipId": 2,
+        "equipId": "s2",
         "equipName": "Ball Size",
         "equipDescription": "Learn more about Ball Sizes!",
         "equipImgUrl": "/assets/img/",
