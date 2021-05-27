@@ -1,6 +1,6 @@
 /**
  * File name: sports-equipment.service.ts
- * Purpose: Fetch & Provide JSON data for the Guides pages
+ * Purpose: Fetch & Provide JSON data for the Guides pages for ALL Sports
  * Date: 5/26/21
  * Author(s): Abe Jeyapratap
  */
