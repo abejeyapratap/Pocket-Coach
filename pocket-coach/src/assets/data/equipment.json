@@ -5,19 +5,19 @@
         "equipId": "s1",
         "equipName": "Shoes",
         "equipDescription": "Learn more about Cleats!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/cleats1.jpg",
         "equipDetails": [
           "Soccer cleats are designed to be comfortable and extremely lightweight to aid in running up and down the field. Their shape also makes for optimized ball contact.",
           "For soccer cleats, you want a tight fit. This is to prevent accidentally sliding or slipping when running across the field.",
           "For a good measuring size, choose cleats that are no more than ¼” longer than your longest foot because soccer shoes that are too big for your foot can put a player at risk of injury."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/cleats.jpg"
       },
       {
         "equipId": "s2",
         "equipName": "Ball Size",
         "equipDescription": "Learn more about Ball Sizes!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/soccersize1.jpg",
         "equipDetails": [
           "Soccer ball size ranges from size 1 to size 5. Size 1 is the smallest size (18 - 20 inches) and should be used by toddlers.",
           "A size 2 soccer ball is 20 - 22 inches and best used by 3 - 5 years olds.",
@@ -25,115 +25,115 @@
           "A size 4 soccer ball is 25 - 26 inches and is recommended for ages 8 - 12.",
           "For ages 12 and up, a size 5 soccer ball is recommended for them and it has a circumference of 27 - 28 inches."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/soccersize.jpg"
       },
       {
         "equipId": "s3",
         "equipName": "Shin Guards",
         "equipDescription": "Learn more about Shin Guards!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/shinguards.jpg",
         "equipDetails": [
           "Shin socks have shin guards built into them for convenience, though they can sometimes feel a bit restrictive.",
           "Slip-in shin guards are relatively lightweight and can be worn under the socks. They can be held in place by just the socks, or sometimes tape or compression sleeves might be wanted. Advanced players typically prefer these due to their greater freedom of movement.",
           "Some shin guards also include ankle padding to protect them from being kicked. These are recommended for younger players, though they may feel restrictive to movement.",
           "In general, if you tend to play a more defensive position you want more protection and if you play offensively you want less for more freedom of movement. Goalies are unique in that they need the least amount of protection."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/shinguards1.jpg"
       }
     ]
   },
   {
     "basketball": [
       {
-        "equipId": "b1",
+        "equipId": "s1",
         "equipName": "Shoes",
         "equipDescription": "Learn more about Shoes!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/basketballshoes.jpg",
         "equipDetails": [
           "Basketball shoes are designed to provide durability and traction on the court, as well as ankle support for abrupt movements."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/basketballshoes1.webp"
       },
       {
-        "equipId": "b2",
+        "equipId": "s2",
         "equipName": "Ball",
-        "equipDescription": "Learn more about Ball Options!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipDescription": "Learn more about Ball!",
+        "equipImgUrl": "/assets/img/spalding.jpg",
         "equipDetails": [
           "For the youngest players, you would typically use a size 3 basketball. It has a 22 inch circumference and is also suitable for a mini hoop.",
           "For kids ranging from 5 - 8 years old, a size 5 would be best suited for them. The ball has a 27.5 inch circumference",
           "For males ranging from 9 - 12 years old, the best basketball size suited for them is a size 6. Females 9 years old and over are also recommended to use a size 6 ball as it is the official size for both women’s college and professional basketball. The ball has a circumference of 28.5 inches.",
           "For males over the age of 13, the recommended size is a size 7. It is the official size basketball for all adult basketballs. It’s also the official size for both men’s college and professional basketball. The circumference of the ball is 29.5 inches."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/basketballsizes"
       }
     ]
   },
   {
     "tennis": [
       {
-        "equipId": "t1",
+        "equipId": "s1",
         "equipName": "Shoes",
         "equipDescription": "Learn more about Shoes!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/tennisshoes.jpg",
         "equipDetails": [
           "Tennis shoes are designed to have durable outsoles to handle constant contact with hard outdoor tennis courts. The outsoles are also patterned to help with court traction."
 
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/tennisshoes1.jpg"
       },
       {
-        "equipId": "t2",
+        "equipId": "s2",
         "equipName": "Racket",
         "equipDescription": "Learn more about Racket Sizes!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/tennisracket.jpg",
         "equipDetails": [
           "The tennis racquet is the piece of equipment that affects the performance of a tennis player the most. There are four aspects of the racquet to consider before buying: the head, weight, length, and grips.",
-          "The head size of the racquet is the area of the racquet where the strings create the face of the racquet. A smaller head size allows for more control and a bigger head size allows for more power. The strings should always be tight.",
-          "The weight of the tennis racquet is also a very important aspect. The weight of a racquet ranges from 9 - 11 ounces and sometimes more. A lighter racquet allows for more control and a heavier racquet allows for more power but is more difficult to control.",
-          "The length of the racquet should be based on the person’s age, but their height also plays a role. Ages 8 and under should use a racquet that measures between 19 to 23 inches. Ages 9 - 10 should use a racquet that measures between 23 to 25 inches. The standard length for an adult tournament is 27 inches. ",
-          "The grip of the racquet is where the player grips the racquet. A proper grip will greatly improve the performance of a tennis player. To properly test the grip, hold the tennis racquet as a forehand, and there should be about a finger to a pencil’s width between your fingers and your palm.  "
+          "The head size of the racquet is the area of the racquet where the strings create the face of the racquet. A smaller head size allows for more control while a bigger head size allows for more power. ",
+          "The weight of a racquet ranges from 9 - 11 ounces and sometimes more. A lighter racquet allows for more control while a heavier racquet allows for more power but is more difficult to control.",
+          "The length of the racquet should be based on the person’s age. Ages 8 and under should use a racquet that measures between 19 to 23 inches. Ages 9 - 10 should use a racquet that measures between 23 to 25 inches. The standard length for an adult tournament is 27 inches. ",
+          "The grip of the racquet is where the player grips the racquet. To properly test the grip, hold the tennis racquet as a forehand, and there should be about a finger to a pencil’s width between your fingers and your palm."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/tennisracket1.jpg"
       }
     ]
   },
   {
     "volleyball": [
       {
-        "equipId": "v1",
+        "equipId": "s1",
         "equipName": "Shoes",
         "equipDescription": "Learn more about Cleats!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/volleyballshoes.webp",
         "equipDetails": [
           "Volleyball shoes are designed to absorb the shock from jumping as well as provide good traction on a gym floor.",
           "You want a snug fit so that sudden movements across the gym floor will not be inhibited."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/volleyballshoes1.jpg"
       },
       {
-        "equipId": "v2",
+        "equipId": "s2",
         "equipName": "Ball Size",
         "equipDescription": "Learn more about Ball Sizes!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/volleyballsize.jpg",
         "equipDetails": [
           "For very young children (about 8 and under), it is best to use an oversized, lightweight ball. This is because at this age, children do not have enough strength or coordination to handle passing a ball that is too heavy or small.",
           "For older children (about ages 8 to 12), it is okay to use a standard size ball, but lightweight is still preferred to avoid injury.",
           "For anyone over the age of 13, it is recommended to use an official size and weight volleyball because people at that age are strong enough and coordinated enough to play by the standard experience."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/volleyballsizes1.jpg"
       },
       {
-        "equipId": "v3",
+        "equipId": "s3",
         "equipName": "Knee Pads",
         "equipDescription": "Learn more about Knee Pads!",
-        "equipImgUrl": "/assets/img/sportFolder",
+        "equipImgUrl": "/assets/img/volleyballknee.jpg",
         "equipDetails": [
           "Not every volleyball player wears knee pads when they play, but it is definitely worth it to consider using them. The knees are one of the most susceptible parts of the body when it comes to injury, and volleyball often involves sliding on your knees to prevent the other team from scoring.",
           "Knee pad sizes are often based on the circumference of the middle of your knee. The most common way to measure this is by wrapping a cloth tape measure around your knee.",
           "Some players opt to instead use knee sleeves, which do not contain protective padding, but are still beneficial. They compress the knee area to provide support and stabilization to the joint."
         ],
-        "equipDetailImgUrl": "/assets/img/sportFolder"
+        "equipDetailImgUrl": "/assets/img/volleyballknee1.jpg"
       }
     ]
   }
