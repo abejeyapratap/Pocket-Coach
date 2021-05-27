@@ -23,7 +23,13 @@ export class SportsEquipmentService {
     'Use a ruler to measure the longest part of the outline',
     'Refer to the size charts of popular brands below',
   ];
-  private _brandImgUrlList: string[] = ['https://i.pinimg.com/280x280_RS/55/49/1f/55491f50d083879b4660fe91b0507dcc.jpg', '/assets/img/', '', ''];
+  // data for the size charts
+  private _brandImgUrlList: string[] = [
+    'https://i.pinimg.com/280x280_RS/55/49/1f/55491f50d083879b4660fe91b0507dcc.jpg',
+    '/assets/img/',
+    '',
+    '',
+  ];
 
   /* Getters */
   get sizesMethodsList() {
@@ -56,7 +62,9 @@ export class SportsEquipmentService {
   }
 
   getBasketballEquipItem(id: string) {
-    return { ...this._basketballEquip.find((equipObj) => equipObj.equipId === id) };
+    return {
+      ...this._basketballEquip.find((equipObj) => equipObj.equipId === id),
+    };
   }
 
   getTennisEquipItem(id: string) {
@@ -64,7 +72,9 @@ export class SportsEquipmentService {
   }
 
   getVolleyballEquipItem(id: string) {
-    return { ...this._volleyballEquip.find((equipObj) => equipObj.equipId === id) };
+    return {
+      ...this._volleyballEquip.find((equipObj) => equipObj.equipId === id),
+    };
   }
 
   constructor() {}
