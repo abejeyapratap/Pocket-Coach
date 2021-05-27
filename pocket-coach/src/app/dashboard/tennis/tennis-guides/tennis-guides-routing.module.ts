@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: TennisGuidesPage
+  },
+  {
+    path: 'tennis-size',
+    loadChildren: () => import('./tennis-size/tennis-size.module').then( m => m.TennisSizePageModule)
+  },
+  {
+    path: 'tennis-equipment',
+    loadChildren: () => import('./tennis-equipment/tennis-equipment.module').then( m => m.TennisEquipmentPageModule)
   }
 ];
 

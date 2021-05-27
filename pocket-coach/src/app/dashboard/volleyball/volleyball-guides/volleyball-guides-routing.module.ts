@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: VolleyballGuidesPage
+  },
+  {
+    path: 'volleyball-size',
+    loadChildren: () => import('./volleyball-size/volleyball-size.module').then( m => m.VolleyballSizePageModule)
+  },
+  {
+    path: 'volleyball-equipment',
+    loadChildren: () => import('./volleyball-equipment/volleyball-equipment.module').then( m => m.VolleyballEquipmentPageModule)
   }
 ];
 
