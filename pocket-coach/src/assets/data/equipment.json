@@ -78,7 +78,7 @@
         "equipImgUrl": "/assets/img/tennisshoes.jpg",
         "equipDetails": [
           "Tennis shoes are designed to have durable outsoles to handle constant contact with hard outdoor tennis courts. The outsoles are also patterned to help with court traction."
-
+      
         ],
         "equipDetailImgUrl": "/assets/img/tennisshoes1.jpg"
       },
@@ -115,7 +115,7 @@
         "equipId": "s2",
         "equipName": "Ball Size",
         "equipDescription": "Learn more about Ball Sizes!",
-        "equipImgUrl": "/assets/img/volleyballsize.jpg",
+        "equipImgUrl": "/assets/img/Volleyballsize.jpg",
         "equipDetails": [
           "For very young children (about 8 and under), it is best to use an oversized, lightweight ball. This is because at this age, children do not have enough strength or coordination to handle passing a ball that is too heavy or small.",
           "For older children (about ages 8 to 12), it is okay to use a standard size ball, but lightweight is still preferred to avoid injury.",
@@ -127,7 +127,7 @@
         "equipId": "s3",
         "equipName": "Knee Pads",
         "equipDescription": "Learn more about Knee Pads!",
-        "equipImgUrl": "/assets/img/volleyballknee.jpg",
+        "equipImgUrl": "/assets/img/volleyballknee2.jpg",
         "equipDetails": [
           "Not every volleyball player wears knee pads when they play, but it is definitely worth it to consider using them. The knees are one of the most susceptible parts of the body when it comes to injury, and volleyball often involves sliding on your knees to prevent the other team from scoring.",
           "Knee pad sizes are often based on the circumference of the middle of your knee. The most common way to measure this is by wrapping a cloth tape measure around your knee.",
