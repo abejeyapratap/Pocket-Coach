@@ -1,3 +1,9 @@
+/**
+ * File name: sports-equipment.service.ts
+ * Purpose: Fetch & Provide JSON data for the Guides pages
+ * Date: 5/26/21
+ * Author(s): Abe Jeyapratap
+ */
 import { Injectable } from '@angular/core';
 import equipmentData from '../../assets/data/equipment.json';
 
@@ -34,6 +40,10 @@ export class SportsEquipmentService {
   // find the equipment with particular ID and return that equipment's details
   getSoccerEquipItem(id: string) {
     return { ...this._soccerEquip.find((equipObj) => equipObj.equipId === id) };
+  }
+
+  getBasketballEquipItem(id: string) {
+    return { ...this._basketballEquip.find((equipObj) => equipObj.equipId === id) };
   }
 
   constructor() {}

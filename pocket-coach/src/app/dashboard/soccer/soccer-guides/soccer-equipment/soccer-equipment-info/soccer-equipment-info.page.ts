@@ -33,6 +33,5 @@ export class SoccerEquipmentInfoPage implements OnInit {
       let id = paramMap.get('equipId');
       this.currentEquip = this.sportsEquipService.getSoccerEquipItem(id);
     });
-    // console.log(this.currentEquip);
   }
 }

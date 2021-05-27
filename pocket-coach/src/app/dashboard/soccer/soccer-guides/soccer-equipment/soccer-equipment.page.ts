@@ -1,3 +1,9 @@
+/**
+ * File name: soccer-equipment.page.ts
+ * Purpose: Sports Equipment Cards
+ * Date: 5/26/21
+ * Author(s): Abe Jeyapratap
+ */
 import { Component, OnInit } from '@angular/core';
 import { SportsEquipmentService } from 'src/app/dashboard/sports-equipment.service';
 
@@ -15,8 +21,6 @@ export class SoccerEquipmentPage implements OnInit {
     equipDetails: string[];
     equipDetailImgUrl: string;
   }[];
-
-  testItem;
 
   constructor(private sportsEquipService: SportsEquipmentService) {}
 
