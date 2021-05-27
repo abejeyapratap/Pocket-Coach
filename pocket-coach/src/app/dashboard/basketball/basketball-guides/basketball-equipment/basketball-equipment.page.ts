@@ -19,6 +19,6 @@ export class BasketballEquipmentPage implements OnInit {
   constructor(private sportsEquipService: SportsEquipmentService) {}
 
   ngOnInit() {
-    this.fetchedEquipList = this.sportsEquipService.soccerEquip;
+    this.fetchedEquipList = this.sportsEquipService.basketballEquip;
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SportsEquipmentService } from 'src/app/dashboard/sports-equipment.service';
 
 @Component({
   selector: 'app-tennis-size',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tennis-size.page.scss'],
 })
 export class TennisSizePage implements OnInit {
+  methodList: string[];
+  imgList: string[];
 
-  constructor() { }
+  constructor(private sportsEquipService: SportsEquipmentService) {}
 
   ngOnInit() {
+    this.methodList = this.sportsEquipService.sizesMethodsList;
+    this.imgList = this.sportsEquipService.brandImgUrlList;
   }
-
 }

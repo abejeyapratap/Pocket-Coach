@@ -13,8 +13,8 @@ import equipmentData from '../../assets/data/equipment.json';
 export class SportsEquipmentService {
   private _soccerEquip = equipmentData[0].soccer;
   private _basketballEquip = equipmentData[1].basketball;
-  /*   private _tennisEquip = equipmentData[2].tennis;
-  private _volleyballlEquip = equipmentData[3].volleyball; */
+  private _tennisEquip = equipmentData[2].tennis;
+  private _volleyballEquip = equipmentData[3].volleyball;
 
   private _sizesMethodsList = [
     'Place a piece of paper against the wall',
@@ -25,6 +25,7 @@ export class SportsEquipmentService {
   ];
   private _brandImgUrlList: string[] = ['https://i.pinimg.com/280x280_RS/55/49/1f/55491f50d083879b4660fe91b0507dcc.jpg', '/assets/img/', '', ''];
 
+  /* Getters */
   get sizesMethodsList() {
     return this._sizesMethodsList;
   }
@@ -37,6 +38,18 @@ export class SportsEquipmentService {
     return [...this._soccerEquip];
   }
 
+  get basketballEquip() {
+    return [...this._basketballEquip];
+  }
+
+  get tennisEquip() {
+    return [...this._tennisEquip];
+  }
+
+  get volleyballEquip() {
+    return [...this._volleyballEquip];
+  }
+
   // find the equipment with particular ID and return that equipment's details
   getSoccerEquipItem(id: string) {
     return { ...this._soccerEquip.find((equipObj) => equipObj.equipId === id) };
@@ -44,6 +57,14 @@ export class SportsEquipmentService {
 
   getBasketballEquipItem(id: string) {
     return { ...this._basketballEquip.find((equipObj) => equipObj.equipId === id) };
+  }
+
+  getTennisEquipItem(id: string) {
+    return { ...this._tennisEquip.find((equipObj) => equipObj.equipId === id) };
+  }
+
+  getVolleyballEquipItem(id: string) {
+    return { ...this._volleyballEquip.find((equipObj) => equipObj.equipId === id) };
   }
 
   constructor() {}
