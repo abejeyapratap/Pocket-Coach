@@ -1,9 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>soccer-size</ion-title>
+<!--
+  File name: soccer-size.page.html
+  Purpose: Sizing Information page
+  Date: 5/26/21
+  Author(s): Abe Jeyapratap
+ -->
+ <ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Guides"
+        color="light"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shoe Sizing</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>
+            <ion-label>Method</ion-label>
+            <ion-item lines="none">
+              <ion-icon name="football-outline"></ion-icon>
+              <ion-icon name="basketball-outline"></ion-icon>
+              <ion-icon name="tennisball-outline"></ion-icon>
+            </ion-item>
+          </ion-list-header>
+          <ion-item lines="none" *ngFor="let method of methodList; index as num">
+            <ion-label class="ion-text-wrap">{{ num+1 }}. {{ method }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>Popular Brands</ion-list-header>
+          <ion-item lines="none" *ngFor="let img of imgList">
+            <ion-img [src]="img"></ion-img>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -4,8 +4,8 @@
   Date: 5/25/21
   Author(s): Abe Jeyapratap
  -->
- <ion-header>
-  <ion-toolbar >
+<ion-header>
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button
         defaultHref="/dashboard"
@@ -13,16 +13,31 @@
         color="light"
       ></ion-back-button>
     </ion-buttons>
-    <ion-title>{{currentEquip.equipName}}</ion-title>
+    <ion-title>{{ currentEquip.equipName }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-grid>
-  <ion-row>
-    <ion-col>
-
-    </ion-col>
-  </ion-row>
-</ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>
+            <ion-label>Recommendations</ion-label>
+            <ion-item lines="none"
+              ><ion-icon name="football-outline"></ion-icon
+            ></ion-item>
+          </ion-list-header>
+          <ion-item *ngFor="let detail of currentEquip.equipDetails">
+            <ion-label class="ion-text-wrap">{{ detail }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="currentEquip.equipDetailImgUrl"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

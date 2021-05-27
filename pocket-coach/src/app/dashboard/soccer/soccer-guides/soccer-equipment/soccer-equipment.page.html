@@ -19,10 +19,11 @@
 
 <ion-content>
 <ion-grid>
+  <!-- Equipment List for Sport with Description -->
   <ion-row *ngFor="let equipment of fetchedEquipList">
     <ion-col>
       <ion-card button routerLink="./{{equipment.equipId}}">
-        <!-- <ion-img [src]="equipment.equipImgUrl"></ion-img> -->
+        <ion-img [src]="equipment.equipImgUrl"></ion-img>
         <ion-card-header>
           <ion-card-title>{{ equipment.equipName }}</ion-card-title>
         </ion-card-header>

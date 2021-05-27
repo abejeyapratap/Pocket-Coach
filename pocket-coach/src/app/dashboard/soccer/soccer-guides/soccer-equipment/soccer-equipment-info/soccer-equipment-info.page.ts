@@ -9,7 +9,14 @@ import { SportsEquipmentService } from 'src/app/dashboard/sports-equipment.servi
   styleUrls: ['./soccer-equipment-info.page.scss'],
 })
 export class SoccerEquipmentInfoPage implements OnInit {
-  currentEquip;
+  currentEquip: {
+    equipId: string;
+    equipName: string;
+    equipDescription: string;
+    equipImgUrl: string;
+    equipDetails: string[];
+    equipDetailImgUrl: string;
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -20,7 +27,7 @@ export class SoccerEquipmentInfoPage implements OnInit {
   ngOnInit() {
     this.route.paramMap.subscribe((paramMap) => {
       if (!paramMap.has('equipId')) {
-        this.navCtrl.navigateBack('/dashboard/soccer/soccer-guides')
+        this.navCtrl.navigateBack('/dashboard/soccer/soccer-guides');
       }
 
       let id = paramMap.get('equipId');

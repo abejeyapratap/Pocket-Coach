@@ -13,6 +13,7 @@ export class SoccerEquipmentPage implements OnInit {
     equipDescription: string;
     equipImgUrl: string;
     equipDetails: string[];
+    equipDetailImgUrl: string;
   }[];
 
   testItem;
