@@ -22,7 +22,5 @@ export class SoccerEquipmentPage implements OnInit {
 
   ngOnInit() {
     this.fetchedEquipList = this.sportsEquipService.soccerEquip;
-/*     this.testItem = this.sportsEquipService.getSoccerEquipItem('s1');
-    console.log(this.testItem); */
   }
 }
