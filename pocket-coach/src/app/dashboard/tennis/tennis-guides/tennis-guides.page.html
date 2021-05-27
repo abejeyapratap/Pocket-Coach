@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tennis-guides</ion-title>
+<!--
+  File name: tennis-guides.page.html
+  Purpose: Guides Home page
+  Date: 5/26/21
+  Author(s): Abe Jeyapratap
+ -->
+ <ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/dashboard"
+        text="Dashboard"
+        color="light"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Equipment Guides</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid class="ion-no-padding ion-padding-horizontal">
+    <ion-row>
+      <ion-col>
+        <ion-card button routerLink="./tennis-size">
+          <ion-img [src]=""></ion-img>
+          <ion-card-header>
+            <ion-card-title>Shoe Size</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card button routerLink="./tennis-equipment">
+          <ion-img [src]=""></ion-img>
+          <ion-card-header>
+            <ion-card-title>Tennis Specific</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
