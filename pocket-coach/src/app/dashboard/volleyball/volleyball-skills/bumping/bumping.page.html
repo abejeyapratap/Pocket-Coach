@@ -1,0 +1,88 @@
+<!--
+  File name: bumping.page.html
+  Purpose: Displays the bumping skill for volleyball
+  Date: 5/28/21
+  Author(s): Abe Jeyapratap
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard" text="Skills"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ currentSkill.skillName }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding-top ion-padding-start ion-padding-end">
+    <ion-segment (ionChange)="onSegmentChange($event)" value="learn">
+      <ion-segment-button value="learn">
+        <ion-label>{{ currentSkill.skillName }}</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="tips"
+        ><ion-label>Tips</ion-label></ion-segment-button
+      >
+      <ion-segment-button value="eval"
+        ><ion-label>Evaluation</ion-label></ion-segment-button
+      >
+    </ion-segment>
+  </div>
+
+  <ion-grid>
+    <ion-row *ngIf="currentSegment == 'learn'">
+      <ion-col>
+        <ion-list>
+          <ion-list-header>Steps</ion-list-header>
+          <ion-item
+            *ngFor="let instruction of currentSkill.skillDetailsObj.skillInstructions"
+          >
+            <ion-label class="ion-text-wrap">{{ instruction }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="currentSegment == 'tips'">
+      <ion-col>
+        <ion-list>
+          <ion-list-header>Additional Tips</ion-list-header>
+          <ion-item *ngFor="let tip of currentSkill.skillDetailsObj.skillTips">
+            <ion-label class="ion-text-wrap">{{ tip }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      *ngIf="currentSegment == 'tips'"
+      class="ion-padding ion-text-center"
+    >
+      <ion-col>
+        <ion-item lines="none" class="ion-text-center">
+          <ion-label class="ion-text-wrap"
+            ><h1>
+              Ready to test yourself?<br /><br />Give it a shot!
+            </h1></ion-label
+          >
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="currentSegment == 'eval'">
+      <ion-col>
+        <ion-list>
+          <ion-list-header>Self-Evaluation</ion-list-header>
+          <ion-item
+            *ngFor="let evalObj of currentSkill.skillDetailsObj.evalObj"
+          >
+            <ion-checkbox
+              color="success"
+              [(ngModel)]="evalObj.toggle"
+              (ionChange)="onToggleCheck()"
+            ></ion-checkbox>
+            <ion-label class="ion-text-wrap">{{ evalObj.eval }}</ion-label>
+            <!-- <ion-label class="ion-text-wrap">{{ evaluation }}</ion-label> -->
+            <!-- <ion-label class="ion-text-wrap">{{ evalObj.toggle }}</ion-label> -->
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

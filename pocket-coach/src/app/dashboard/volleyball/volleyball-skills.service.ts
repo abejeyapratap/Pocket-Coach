@@ -16,7 +16,7 @@ export class VolleyballSkillsService {
   private _basicSkillList: Skill[] = [
     new Skill(
       'Bumping/Receiving',
-      's1',
+      'bumping',
       'This is one of the most basic, yet important skills in volleyball. It is the best way to receive a ball from serving or hitting and begin your team’s offense.',
       '/assets/img/vball-passing.jpg',
       new SkillDetails(
@@ -41,13 +41,31 @@ export class VolleyballSkillsService {
           'Bump the ball 10 times in a row without dropping it. (Can be done with a partner or against a wall.)',
           'Bump the ball 10 times in a row while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall.)',
           'Bump the ball 10 times in a row solo. While standing on flat ground, keep bumping the ball up in the air and don’t let it drop. This will help you have better control.',
+        ],
+        [
+          {
+            eval: 'Bump the ball 10 times. (Can be done with a partner or against a wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Bump the ball 10 times in a row without dropping it. (Can be done with a partner or against a wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Bump the ball 10 times in a row while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Bump the ball 10 times in a row solo. While standing on flat ground, keep bumping the ball up in the air and don’t let it drop. This will help you have better control.',
+            toggle: false,
+          },
         ]
       ),
       0
     ),
     new Skill(
       'Setting',
-      's2',
+      'setting',
       'This is the second step of an offensive play. It often takes the form of using your hands to push the ball into a position that allows a teammate to get a strong hit.',
       '/assets/img/vball-setting.jpg',
       new SkillDetails(
@@ -72,13 +90,31 @@ export class VolleyballSkillsService {
           'Set the ball 10 times without dropping it (with a partner or against the wall.)',
           'Set the ball 10 times in a row while moving. Intentionally set the ball to the side so that you must move to set it. (with a partner or against the wall.)',
           'Get in a sitting position and set the ball while only using your arms 10 times without dropping it. This drill will help strengthen your arms and wrists because your legs won’t be used. (with a partner or against the wall)',
+        ],
+        [
+          {
+            eval: 'Set the ball 10 times (with a partner or against the wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Set the ball 10 times without dropping it (with a partner or against the wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Set the ball 10 times in a row while moving. Intentionally set the ball to the side so that you must move to set it. (with a partner or against the wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Get in a sitting position and set the ball while only using your arms 10 times without dropping it. This drill will help strengthen your arms and wrists because your legs won’t be used. (with a partner or against the wall)',
+            toggle: false,
+          },
         ]
       ),
       0
     ),
     new Skill(
       'Hitting/Spiking',
-      's3',
+      'hitting',
       'This is the final step of an offensive play. This is the most effective way to score a point by slamming the ball over the net into the opponent’s court.',
       '/assets/img/vball-hitting.jpg',
       new SkillDetails(
@@ -101,13 +137,31 @@ export class VolleyballSkillsService {
           'Stand far away from the wall, and practice hitting 10 times against the wall. Swing the ball so that it bounces off the ground first, and then off the wall and back at you. As the ball is in the air, get in position and swing again.',
           'Do the approach and hit the ball 10 times successfully (Have someone stand on top of a chair while holding the ball out)',
           'Do the approach and hit the ball 10 times successfully and in the court.',
+        ],
+        [
+          {
+            eval: 'Do the approach 10 times successfully',
+            toggle: false,
+          },
+          {
+            eval: 'Stand far away from the wall, and practice hitting 10 times against the wall. Swing the ball so that it bounces off the ground first, and then off the wall and back at you. As the ball is in the air, get in position and swing again.',
+            toggle: false,
+          },
+          {
+            eval: 'Do the approach and hit the ball 10 times successfully (Have someone stand on top of a chair while holding the ball out)',
+            toggle: false,
+          },
+          {
+            eval: 'Do the approach and hit the ball 10 times successfully and in the court.',
+            toggle: false,
+          },
         ]
       ),
       0
     ),
     new Skill(
       'Serving',
-      's4',
+      'serving',
       'How every volley begins. It is one of the few actions within volleyball that is individual and not reliant on your own team.',
       '/assets/img/vball-serving.jpg',
       new SkillDetails(
@@ -138,6 +192,24 @@ export class VolleyballSkillsService {
           'Serve the ball 10 times while doing the jumping float serve. (The ball should be slightly over the net, and in the count for the point to count.)',
           'Serve the ball 10 times while doing the top-spin serve (The ball’s trajectory should be rotating downwards. The ball should land in the court for the point to count.)',
           'Serve the ball 10 times while aiming for a specific area you chose. (Choose any of the serving technique you want to get better at and make sure the ball lands in the general area of the spot you have chose.)',
+        ],
+        [
+          {
+            eval: 'Serve the ball 10 times while doing the standing float serve approach. (The ball should be slightly over the net, and in the court for the point to count.)',
+            toggle: false,
+          },
+          {
+            eval: 'Serve the ball 10 times while doing the jumping float serve. (The ball should be slightly over the net, and in the count for the point to count.)',
+            toggle: false,
+          },
+          {
+            eval: 'Serve the ball 10 times while doing the top-spin serve (The ball’s trajectory should be rotating downwards. The ball should land in the court for the point to count.)',
+            toggle: false,
+          },
+          {
+            eval: 'Serve the ball 10 times while aiming for a specific area you chose. (Choose any of the serving technique you want to get better at and make sure the ball lands in the general area of the spot you have chose.)',
+            toggle: false,
+          },
         ]
       ),
       0
@@ -146,20 +218,23 @@ export class VolleyballSkillsService {
 
   constructor() {}
 
+  // return a copy; not OG
   get basicSkillsList() {
-    // return a copy; not OG
     return [...this._basicSkillList];
   }
 
-  // find the Skill in list to render & return a clone
+  // find the Skill in list to render; do NOT return clone (need to update progress)
   getSkill(id: string) {
-    return {
-      ...this._basicSkillList.find((skillObj) => skillObj.skillId === id),
-    };
+    return this._basicSkillList.find((skillObj) => skillObj.skillId === id);
   }
 
   // Return the number of Skills to be learned
   countSkills() {
     return this._basicSkillList.length;
+  }
+
+  // Update the progress of a Skill w/ particular 'skillId'
+  changeProgress(skillId: string, updatedProgress: number) {
+    this.getSkill(skillId).progress = updatedProgress;
   }
 }

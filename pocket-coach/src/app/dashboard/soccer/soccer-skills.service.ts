@@ -180,7 +180,5 @@ export class SoccerSkillsService {
   // Update the progress of a Skill w/ particular 'skillId'
   changeProgress(skillId: string, updatedProgress: number) {
     this.getSkill(skillId).progress = updatedProgress;
-    /* console.log('Done');
-    console.log(this.getSkill(skillId).progress) */
   }
 }

@@ -9,12 +9,27 @@ const routes: Routes = [
     component: TennisSkillsPage,
   },
   {
+    path: 'serving',
+    loadChildren: () =>
+      import('./serving/serving.module').then((m) => m.ServingPageModule),
+  },
+  {
+    path: 'forehand',
+    loadChildren: () =>
+      import('./forehand/forehand.module').then((m) => m.ForehandPageModule),
+  },
+  {
+    path: 'backhand',
+    loadChildren: () =>
+      import('./backhand/backhand.module').then((m) => m.BackhandPageModule),
+  },
+  /*   {
     path: ':skillId',
     loadChildren: () =>
       import('./tennis-details/tennis-details.module').then(
         (m) => m.TennisDetailsPageModule
       ),
-  },
+  }, */
 ];
 
 @NgModule({

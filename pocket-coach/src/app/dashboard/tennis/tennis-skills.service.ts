@@ -16,7 +16,7 @@ export class TennisSkillsService {
   private _basicSkillList: Skill[] = [
     new Skill(
       'Serving',
-      's1',
+      'serving',
       'The shot to start a point. A player hits the ball with a racquet so that it will fall into the service box that is diagonally opposite to them',
       '/assets/img/tennis_serve.jpg',
       new SkillDetails(
@@ -37,13 +37,23 @@ export class TennisSkillsService {
           'Serve correctly 8 times in a row (ball lands in the service box).',
           'Place 3 cones in the service box; one in the middle, one on the right edge, and one on the left edge. Hit each cone once within 15 serves.',
 
+        ],
+        [
+          {
+            eval: 'Serve correctly 8 times in a row (ball lands in the service box).',
+            toggle: false,
+          },
+          {
+            eval: 'Place 3 cones in the service box; one in the middle, one on the right edge, and one on the left edge. Hit each cone once within 15 serves.',
+            toggle: false,
+          },
         ]
       ),
       0
     ),
     new Skill(
       'Forehand',
-      's2',
+      'forehand',
       'Technique that allows you to hit with effortless power while also maintaining high consistency in your shot.',
       '/assets/img/tennis_forehand.jpg',
       new SkillDetails(
@@ -54,13 +64,19 @@ export class TennisSkillsService {
           'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
         ],
         ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
-        ['With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully']
+        ['With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully'],
+        [
+          {
+            eval: 'With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully',
+            toggle: false,
+          },
+        ]
       ),
       0
     ),
     new Skill(
       'Backhand',
-      's3',
+      'backhand',
       'Technique that allows you to hit the ball on your weak side. For example, if you’re right handed and the ball comes to your left side, you would use a backhand .',
       '/assets/img/backhand1.jpeg',
       new SkillDetails(
@@ -70,7 +86,13 @@ export class TennisSkillsService {
         ],
         ['image.png'],
         ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
-        ['With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully']
+        ['With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully'],
+        [
+          {
+            eval: 'With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully',
+            toggle: false,
+          },
+        ]
       ),
       0
     ),
@@ -78,20 +100,23 @@ export class TennisSkillsService {
 
   constructor() {}
 
+  // return a copy; not OG
   get basicSkillsList() {
-    // return a copy; not OG
     return [...this._basicSkillList];
   }
 
-  // find the Skill in list to render & return a clone
+  // find the Skill in list to render; do NOT return clone (need to update progress)
   getSkill(id: string) {
-    return {
-      ...this._basicSkillList.find((skillObj) => skillObj.skillId === id),
-    };
+    return this._basicSkillList.find((skillObj) => skillObj.skillId === id);
   }
 
   // Return the number of Skills to be learned
   countSkills() {
     return this._basicSkillList.length;
+  }
+
+  // Update the progress of a Skill w/ particular 'skillId'
+  changeProgress(skillId: string, updatedProgress: number) {
+    this.getSkill(skillId).progress = updatedProgress;
   }
 }
