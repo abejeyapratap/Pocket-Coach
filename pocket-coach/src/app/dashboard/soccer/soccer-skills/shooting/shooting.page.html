@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar >
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/dashboard" text="Skills"></ion-back-button>
     </ion-buttons>
@@ -13,8 +13,12 @@
       <ion-segment-button value="learn">
         <ion-label>{{ currentSkill.skillName }}</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="tips"><ion-label>Tips</ion-label></ion-segment-button>
-      <ion-segment-button value="eval"><ion-label>Evaluation</ion-label></ion-segment-button>
+      <ion-segment-button value="tips"
+        ><ion-label>Tips</ion-label></ion-segment-button
+      >
+      <ion-segment-button value="eval"
+        ><ion-label>Evaluation</ion-label></ion-segment-button
+      >
     </ion-segment>
   </div>
 
@@ -47,7 +51,11 @@
     >
       <ion-col>
         <ion-item lines="none" class="ion-text-center">
-          <ion-label class="ion-text-wrap"><h1>Ready to test yourself?<br><br>Give it a shot!</h1></ion-label>
+          <ion-label class="ion-text-wrap"
+            ><h1>
+              Ready to test yourself?<br /><br />Give it a shot!
+            </h1></ion-label
+          >
         </ion-item>
       </ion-col>
     </ion-row>
@@ -55,8 +63,14 @@
       <ion-col>
         <ion-list>
           <ion-list-header>Self-Evaluation</ion-list-header>
-          <ion-item *ngFor="let evalObj of currentSkill.skillDetailsObj.evalObj">
-            <ion-checkbox color="success" [(ngModel)]="evalObj.toggle" (ionChange)="onToggleCheck()"></ion-checkbox>
+          <ion-item
+            *ngFor="let evalObj of currentSkill.skillDetailsObj.evalObj"
+          >
+            <ion-checkbox
+              color="success"
+              [(ngModel)]="evalObj.toggle"
+              (ionChange)="onToggleCheck()"
+            ></ion-checkbox>
             <ion-label class="ion-text-wrap">{{ evalObj.eval }}</ion-label>
             <!-- <ion-label class="ion-text-wrap">{{ evaluation }}</ion-label> -->
             <!-- <ion-label class="ion-text-wrap">{{ evalObj.toggle }}</ion-label> -->

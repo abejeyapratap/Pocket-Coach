@@ -1,22 +1,20 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/dashboard/skills.model';
 import { SoccerSkillsService } from '../../soccer-skills.service';
 
 @Component({
-  selector: 'app-dribbling',
-  templateUrl: './dribbling.page.html',
-  styleUrls: ['./dribbling.page.scss'],
+  selector: 'app-shooting',
+  templateUrl: './shooting.page.html',
+  styleUrls: ['./shooting.page.scss'],
 })
-export class DribblingPage implements OnInit {
-  // @Output() currentTotal = new EventEmitter<{ id: string; total: number }>();
+export class ShootingPage implements OnInit {
   currentSkill: Skill;
   currentSegment = 'learn';
-
 
   constructor(private soccerSkillsService: SoccerSkillsService) {}
 
   ngOnInit() {
-    this.currentSkill = this.soccerSkillsService.getSkill('dribbling');
+    this.currentSkill = this.soccerSkillsService.getSkill('shooting');
   }
 
   onSegmentChange(event: any) {
@@ -33,7 +31,10 @@ export class DribblingPage implements OnInit {
     });
 
     // console.log(evalTotal);
-    this.soccerSkillsService.changeProgress(this.currentSkill.skillId, evalTotal);
+    this.soccerSkillsService.changeProgress(
+      this.currentSkill.skillId,
+      evalTotal
+    );
 
     if (evalTotal === this.currentSkill.skillDetailsObj.evalObj.length) {
       console.log(evalTotal);

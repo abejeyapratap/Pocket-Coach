@@ -9,10 +9,12 @@ import { SoccerSkillsService } from '../soccer-skills.service';
 })
 export class SoccerSkillsPage implements OnInit {
   fetchedSkillList: Skill[];
+  // prog
 
   constructor(private soccerSkillsService: SoccerSkillsService) {}
 
   ngOnInit() {
     this.fetchedSkillList = this.soccerSkillsService.basicSkillsList;
+    // this.prog = this.soccerSkillsService.getSkill('dribbling')
   }
 }

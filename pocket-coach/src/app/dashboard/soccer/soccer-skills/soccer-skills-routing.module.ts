@@ -14,12 +14,22 @@ const routes: Routes = [
       import('./dribbling/dribbling.module').then((m) => m.DribblingPageModule),
   },
   {
+    path: 'passing',
+    loadChildren: () =>
+      import('./passing/passing.module').then((m) => m.PassingPageModule),
+  },
+  {
+    path: 'shooting',
+    loadChildren: () =>
+      import('./shooting/shooting.module').then((m) => m.ShootingPageModule),
+  },
+/*   {
     path: ':skillId',
     loadChildren: () =>
       import('./soccer-details/soccer-details.module').then(
         (m) => m.SoccerDetailsPageModule
       ),
-  },
+  }, */
 ];
 
 @NgModule({

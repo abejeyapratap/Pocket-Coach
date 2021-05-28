@@ -64,7 +64,7 @@ export class SoccerSkillsService {
     ),
     new Skill(
       'Passing',
-      's2',
+      'passing',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
       '/assets/img/soccer-passing.jpg',
       new SkillDetails(
@@ -87,13 +87,31 @@ export class SoccerSkillsService {
           'Pass the ball 10 times while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall. Best done with a partner.)',
           'Pass the ball 10 times in a row while moving without losing control. (Best done with a partner, but can still be done against the wall.)',
           'If you have a group of 3 or more people, form a shape around the ball (triangle with 3 people or square with 4), and kick the ball back and forth 10 times (10 pass per person,)',
+        ],
+        [
+          {
+            eval: 'Pass the ball 10 times (Can be done with a partner or against a wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'Pass the ball 10 times while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall. Best done with a partner.)',
+            toggle: false,
+          },
+          {
+            eval: 'Pass the ball 10 times in a row while moving without losing control. (Best done with a partner, but can still be done against the wall.)',
+            toggle: false,
+          },
+          {
+            eval: 'If you have a group of 3 or more people, form a shape around the ball (triangle with 3 people or square with 4), and kick the ball back and forth 10 times (10 pass per person,)',
+            toggle: false,
+          },
         ]
       ),
       0
     ),
     new Skill(
       'Shooting',
-      's3',
+      'shooting',
       'The most basic skill of soccer. Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
       '/assets/img/soccer-shooting.jpg',
       new SkillDetails(
@@ -118,6 +136,24 @@ export class SoccerSkillsService {
           'Kick the ball 10 times into the goal while dribbling the ball.',
           'Kick the ball 10 times under the middle of the ball to give the ball more height and score.',
           'Curve the ball 10 times and score.',
+        ],
+        [
+          {
+            eval: 'Kick the ball 10 times into the goal while standing.',
+            toggle: false,
+          },
+          {
+            eval: 'Kick the ball 10 times into the goal while dribbling the ball.',
+            toggle: false,
+          },
+          {
+            eval: 'Kick the ball 10 times under the middle of the ball to give the ball more height and score.',
+            toggle: false,
+          },
+          {
+            eval: 'Curve the ball 10 times and score.',
+            toggle: false,
+          },
         ]
       ),
       0
@@ -131,25 +167,20 @@ export class SoccerSkillsService {
     return [...this._basicSkillList];
   }
 
-  // find the Skill in list to render & return a clone
+  // find the Skill in list to render; do NOT return clone (need to update progress)
   getSkill(id: string) {
-    return {
-      ...this._basicSkillList.find((skillObj) => skillObj.skillId === id),
-    };
+    return this._basicSkillList.find((skillObj) => skillObj.skillId === id);
   }
-
-/*   getSkillByName(name: string) {
-    return {
-      ...this._basicSkillList.find((skillObj) => { skillObj.skillName == name}),
-    };
-  } */
 
   // Return the number of Skills to be learned
   countSkills() {
     return this._basicSkillList.length;
   }
 
-  /* countSkillEval(evalNum: number) {
-    return this._basicSkillList[evalNum].skillDetailsObj.skillEval.length;
-  } */
+  // Update the progress of a Skill w/ particular 'skillId'
+  changeProgress(skillId: string, updatedProgress: number) {
+    this.getSkill(skillId).progress = updatedProgress;
+    /* console.log('Done');
+    console.log(this.getSkill(skillId).progress) */
+  }
 }
