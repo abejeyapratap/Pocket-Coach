@@ -6,14 +6,22 @@
  -->
 
 <ion-content>
-  <ion-grid>
+  <ion-grid class="ion-text-center">
     <ion-row>
-      <ion-col class="ion-text-center ion-no-padding-top">
-        <ion-text><h1>Welcome to Pocket Coach!</h1></ion-text>
+      <ion-col class="ion-no-padding-top">
+        <ion-text><h1>Welcome to PocketCoach</h1></ion-text>
         <ion-img src="/assets/img/logo.png"></ion-img>
-        <ion-text><h2>This app is designed to teach beginners how to play popular sports.</h2></ion-text>
-        <ion-text><h2>No prior knowledge necessary!</h2></ion-text>
-        <ion-button routerLink="dashboard">Tap to begin learning</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text><h2>We're here to teach YOU how to play popular sports!</h2></ion-text>
+        <ion-text class="ion-padding-vertical"><h2>No prior knowledge necessary!</h2></ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="dashboard" size="large">Tap to begin learning</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
