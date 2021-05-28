@@ -13,7 +13,7 @@ import { SoccerEvaluationComponent } from './soccer-evaluation/soccer-evaluation
 export class SoccerDetailsPage implements OnInit {
   // Display details for the Skill fetched
   currentSkill: Skill;
-  currentSegment = 'learn';
+  currentSegment = 'eval';
 
   constructor(
     private route: ActivatedRoute,
@@ -36,6 +36,10 @@ export class SoccerDetailsPage implements OnInit {
 
   onSegmentChange(event: any) {
     this.currentSegment = event.detail.value;
+  }
+
+  onToggleCheck() {
+
   }
 
   onOpenEvaluationModal() {

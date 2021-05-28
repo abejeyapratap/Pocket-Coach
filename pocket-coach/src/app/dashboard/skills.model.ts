@@ -22,6 +22,6 @@ export class SkillDetails {
     public imageUrls: string[],
     public skillTips: string[],
     public skillEval: string[],
-    public toggleList?: boolean[]
+    public evalObj?: { eval: string; toggle: boolean }[]
   ) {}
 }

@@ -4,7 +4,7 @@
       {
         "equipId": "s1",
         "equipName": "Shoes",
-        "equipDescription": "Learn more about Cleats!",
+        "equipDescription": "Learn more about Soccer Cleats!",
         "equipImgUrl": "/assets/img/cleats1.jpg",
         "equipDetails": [
           "Soccer cleats are designed to be comfortable and extremely lightweight to aid in running up and down the field. Their shape also makes for optimized ball contact.",
@@ -65,7 +65,7 @@
           "For males ranging from 9 - 12 years old, the best basketball size suited for them is a size 6. Females 9 years old and over are also recommended to use a size 6 ball as it is the official size for both women’s college and professional basketball. The ball has a circumference of 28.5 inches.",
           "For males over the age of 13, the recommended size is a size 7. It is the official size basketball for all adult basketballs. It’s also the official size for both men’s college and professional basketball. The circumference of the ball is 29.5 inches."
         ],
-        "equipDetailImgUrl": "/assets/img/basketballsizes"
+        "equipDetailImgUrl": "/assets/img/basketballsizes.jpg"
       }
     ]
   },
@@ -78,7 +78,7 @@
         "equipImgUrl": "/assets/img/tennisshoes.jpg",
         "equipDetails": [
           "Tennis shoes are designed to have durable outsoles to handle constant contact with hard outdoor tennis courts. The outsoles are also patterned to help with court traction."
-      
+
         ],
         "equipDetailImgUrl": "/assets/img/tennisshoes1.jpg"
       },
@@ -103,7 +103,7 @@
       {
         "equipId": "s1",
         "equipName": "Shoes",
-        "equipDescription": "Learn more about Cleats!",
+        "equipDescription": "Learn more about Volleyball Cleats!",
         "equipImgUrl": "/assets/img/volleyballshoes.webp",
         "equipDetails": [
           "Volleyball shoes are designed to absorb the shock from jumping as well as provide good traction on a gym floor.",

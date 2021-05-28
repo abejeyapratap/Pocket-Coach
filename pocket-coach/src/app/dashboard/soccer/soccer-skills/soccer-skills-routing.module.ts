@@ -9,6 +9,11 @@ const routes: Routes = [
     component: SoccerSkillsPage,
   },
   {
+    path: 'dribbling',
+    loadChildren: () =>
+      import('./dribbling/dribbling.module').then((m) => m.DribblingPageModule),
+  },
+  {
     path: ':skillId',
     loadChildren: () =>
       import('./soccer-details/soccer-details.module').then(

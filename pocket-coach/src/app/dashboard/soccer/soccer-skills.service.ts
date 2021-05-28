@@ -16,7 +16,7 @@ export class SoccerSkillsService {
   private _basicSkillList: Skill[] = [
     new Skill(
       'Dribbling',
-      's1',
+      'dribbling',
       'Dribbling is the ability to carry the ball past an opponent while being in control and faking the opponent out.',
       '/assets/img/soccer-dribbling.jpg',
       new SkillDetails(
@@ -41,7 +41,24 @@ export class SoccerSkillsService {
           'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
           'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.',
         ],
-        [false, false, false, false]
+        [
+          {
+            eval: 'Dribble down half the size of a soccer field without losing control of the ball while dribbling at a moderate pace 3 times.',
+            toggle: false,
+          },
+          {
+            eval: 'Successfully complete drill 3 times without losing control (Around the square counts as 1). Place 10 soccer cones in a row with space in between them so that you can dribble through them. Use one foot to dribble the ball while using both the inside and outside of your shoe. Switch foot after you’re done.',
+            toggle: false,
+          },
+          {
+            eval: 'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
+            toggle: false,
+          },
+          {
+            eval: 'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.',
+            toggle: false,
+          },
+        ]
       ),
       0
     ),
@@ -120,6 +137,12 @@ export class SoccerSkillsService {
       ...this._basicSkillList.find((skillObj) => skillObj.skillId === id),
     };
   }
+
+/*   getSkillByName(name: string) {
+    return {
+      ...this._basicSkillList.find((skillObj) => { skillObj.skillName == name}),
+    };
+  } */
 
   // Return the number of Skills to be learned
   countSkills() {
