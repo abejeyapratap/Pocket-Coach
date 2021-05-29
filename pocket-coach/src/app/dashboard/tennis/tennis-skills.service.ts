@@ -34,11 +34,6 @@ export class TennisSkillsService {
           'Jumping while serving. This also allows for more power in the serve',
         ],
         [
-          'Serve correctly 8 times in a row (ball lands in the service box).',
-          'Place 3 cones in the service box; one in the middle, one on the right edge, and one on the left edge. Hit each cone once within 15 serves.',
-
-        ],
-        [
           {
             eval: 'Serve correctly 8 times in a row (ball lands in the service box).',
             toggle: false,
@@ -57,14 +52,20 @@ export class TennisSkillsService {
       'Technique that allows you to hit with effortless power while also maintaining high consistency in your shot.',
       '/assets/img/tennis_forehand.jpg',
       new SkillDetails(
-        ['Predict where the ball will be going by looking at the movement of the opponent.', 'Get a grip of the racquet with your dominant hand. The wrist should be loose. Non dominant hand should be resting on the racket.',
-         'Keep your legs shoulder width apart and comfortably bent','As the ball comes, pull your shoulder back and swing forward, hitting the ball back to the other side','Keep your eye on the ball until after you make contact with the ball'
+        [
+          'Predict where the ball will be going by looking at the movement of the opponent.',
+          'Get a grip of the racquet with your dominant hand. The wrist should be loose. Non dominant hand should be resting on the racket.',
+          'Keep your legs shoulder width apart and comfortably bent',
+          'As the ball comes, pull your shoulder back and swing forward, hitting the ball back to the other side',
+          'Keep your eye on the ball until after you make contact with the ball',
         ],
         [
           'https://soccerlifestyle.com/wp-content/uploads/2019/05/How-to-Dribble-a-Soccer-Ball-soccerlifestyle.jpeg',
         ],
-        ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
-        ['With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully'],
+        [
+          'Follow through, continue your arm extension after hitting the ball',
+          'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball',
+        ],
         [
           {
             eval: 'With a partner, tell them to throw the ball towards your dominant hand. Return the ball using a backhand 5 times in a row successfully',
@@ -80,13 +81,18 @@ export class TennisSkillsService {
       'Technique that allows you to hit the ball on your weak side. For example, if you’re right handed and the ball comes to your left side, you would use a backhand .',
       '/assets/img/backhand1.jpeg',
       new SkillDetails(
-        ['Predict where the ball will be going by looking at the movement of the opponent.', 'Get a grip of the racquet with both your dominant hand and non dominant hand. Both wrists should be loose. Non dominant hand above dominant hand.',
-          'Keep your legs shoulder width apart and comfortably bent', 'As the ball comes, keep your legs steady, twist you core, and release the core to hit the ball back to the other side',
+        [
+          'Predict where the ball will be going by looking at the movement of the opponent.',
+          'Get a grip of the racquet with both your dominant hand and non dominant hand. Both wrists should be loose. Non dominant hand above dominant hand.',
+          'Keep your legs shoulder width apart and comfortably bent',
+          'As the ball comes, keep your legs steady, twist you core, and release the core to hit the ball back to the other side',
           'Keep your eye on the ball until after you make contact with the ball',
         ],
         ['image.png'],
-        ['Follow through, continue your arm extension after hitting the ball', 'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball'],
-        ['With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully'],
+        [
+          'Follow through, continue your arm extension after hitting the ball',
+          'Remain focused and keep your eye on the ball, this helps with accuracy when hitting the ball',
+        ],
         [
           {
             eval: 'With a partner, tell them to throw the ball towards your non dominant hand. Return the ball using a backhand 5 times in a row successfully',

@@ -12,7 +12,7 @@ export class Skill {
     public description: string,
     public skillImgUrl: string,
     public skillDetailsObj: SkillDetails,
-    public progress?: number
+    public progress: number
   ) {}
 }
 
@@ -21,7 +21,6 @@ export class SkillDetails {
     public skillInstructions: string[],
     public imageUrls: string[],
     public skillTips: string[],
-    public skillEval: string[],
-    public evalObj?: { eval: string; toggle: boolean }[]
+    public evalObj: { eval: string; toggle: boolean }[]
   ) {}
 }
