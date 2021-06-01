@@ -1,3 +1,9 @@
+/**
+ * File name: ddribbling.page.ts
+ * Purpose: Skills fetching with progression update logic
+ * Date: 5/28/21
+ * Author(s): Abe Jeyapratap
+ */
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/dashboard/skills.model';
 import { SoccerSkillsService } from '../../soccer-skills.service';
