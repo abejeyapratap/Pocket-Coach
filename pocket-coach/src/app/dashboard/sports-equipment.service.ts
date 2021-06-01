@@ -21,7 +21,7 @@ export class SportsEquipmentService {
     'Place foot on paper (works best on hard flooring)',
     'Using a pencil, trace the outline of your foot (may be easier with someone else’s help)',
     'Use a ruler to measure the longest part of the outline',
-    'Refer to the size chart below (scroll to see men\'s, women\'s, or kid\'s)',
+    "Refer to the size chart below (scroll to see men's, women's, or kid's)",
   ];
   // data for the size charts
   private _brandImgUrlList: string[] = [

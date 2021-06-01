@@ -29,6 +29,9 @@ export class DribblingPage implements OnInit {
         evalTotal += 1;
       }
     });
-    this.soccerSkillsService.changeProgress(this.currentSkill.skillId, evalTotal);
+    this.soccerSkillsService.changeProgress(
+      this.currentSkill.skillId,
+      evalTotal
+    );
   }
 }
