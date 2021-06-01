@@ -34,6 +34,12 @@ export class BasketballSkillsService {
           'Try to keep the ball low. The lower the ball, the harder it is for the defender to steal the ball.',
         ],
         [
+          'Dribble the ball 15 times without losing control of the ball with each hand (30 times total).',
+          'Dribble the ball 15 times without looking at the ball with each hand (30 times total).',
+          'Dribble the ball while walking around the court for 25 seconds (no looking at the ball and remain full control).',
+          'Dribble the ball while running around the court 15 seconds (no looking at the ball and remain full control).',
+        ],
+        [
           {
             eval: 'Dribble the ball 15 times without losing control of the ball with each hand (30 times total).',
             toggle: false,
@@ -76,6 +82,11 @@ export class BasketballSkillsService {
           'When you catch the ball, dip the ball down to your waist. In one motion go up for the shot. This gives you more power and momentum for longer shots.',
         ],
         [
+          'Make 3 shots in a row from 4-6 feet away from the basket.',
+          'Make 6 out of 10 free throws (15 feet from the basket).',
+          'Make 2 out of 4 three pointers (around 22 feet from the basket).',
+        ],
+        [
           {
             eval: 'Make 3 shots in a row from 4-6 feet away from the basket.',
             toggle: false,
@@ -111,6 +122,10 @@ export class BasketballSkillsService {
           'Always look for open teammates on the court to pass it to',
           'You could try to fake a pass to trick the defender',
           'Try to predict where the defender is going and pass accordingly',
+        ],
+        [
+          'Do 20 successful chest passes in a row (pass it to a wall or another person)',
+          'Do 20 successful bounce passes in a row (pass it to a wall or another person)',
         ],
         [
           {

@@ -36,6 +36,12 @@ export class SoccerSkillsService {
           'Different situations require different dribbling techniques',
         ],
         [
+          'Dribble down half the size of a soccer field without losing control of the ball while dribbling at a moderate pace 3 times.',
+          'Successfully complete drill 3 times without losing control (Around the square counts as 1). Place 10 soccer cones in a row with space in between them so that you can dribble through them. Use one foot to dribble the ball while using both the inside and outside of your shoe. Switch foot after you’re done.',
+          'Successfully complete drill 3 times without losing control (Back and forth counts as 1). Place one cone down, walk 8 foot forward, place another cone down and turn 90 degrees. Continue, until the four cones make a square. Dribble as close as possible to the cones while using the outside of your foot. Switch foot after you’re done.',
+          'Do the shuttle run 3 times without losing control. Place 6 cones 5 yards apart in a single line. Start at the first cone, and dribble to the second cone. Once you reach the second cone turn around and run to the first cone. Continue until you have reached the first cone while going through all 6 cones. You should be dribbling the entire time.',
+        ],
+        [
           {
             eval: 'Dribble down half the size of a soccer field without losing control of the ball while dribbling at a moderate pace 3 times.',
             toggle: false,
@@ -75,6 +81,12 @@ export class SoccerSkillsService {
           'Keep your eyes on the ball to ensure you can properly perform the pass.',
           'Make sure you kick at the center of the ball. Otherwise, it may go in a direction different from the one you want it to go in.',
           'If you have trouble balancing, try holding your arms out to control yourself.',
+        ],
+        [
+          'Pass the ball 10 times (Can be done with a partner or against a wall.)',
+          'Pass the ball 10 times while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall. Best done with a partner.)',
+          'Pass the ball 10 times in a row while moving without losing control. (Best done with a partner, but can still be done against the wall.)',
+          'If you have a group of 3 or more people, form a shape around the ball (triangle with 3 people or square with 4), and kick the ball back and forth 10 times (10 pass per person,)',
         ],
         [
           {
@@ -118,6 +130,12 @@ export class SoccerSkillsService {
           'Maintain your composure, keep your ankle locked, and stand straight.',
           'Make contact near the middle of the ball.',
           'Different shooting techniques depend on the current situation.',
+        ],
+        [
+          'Kick the ball 10 times into the goal while standing.',
+          'Kick the ball 10 times into the goal while dribbling the ball.',
+          'Kick the ball 10 times under the middle of the ball to give the ball more height and score.',
+          'Curve the ball 10 times and score.',
         ],
         [
           {

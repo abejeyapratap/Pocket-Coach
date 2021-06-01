@@ -37,6 +37,12 @@ export class VolleyballSkillsService {
           'To aim the pass left or right, twist your shoulders. This will take time to get used to.',
         ],
         [
+          'Bump the ball 10 times. (Can be done with a partner or against a wall.)',
+          'Bump the ball 10 times in a row without dropping it. (Can be done with a partner or against a wall.)',
+          'Bump the ball 10 times in a row while moving. Intentionally hit the ball to the side so that you must move to receive it. (Can be done with a partner or against a wall.)',
+          'Bump the ball 10 times in a row solo. While standing on flat ground, keep bumping the ball up in the air and don’t let it drop. This will help you have better control.',
+        ],
+        [
           {
             eval: 'Bump the ball 10 times. (Can be done with a partner or against a wall.)',
             toggle: false,
@@ -80,6 +86,12 @@ export class VolleyballSkillsService {
           'You can not hit the ball twice during a set. (Touching the ball with each hand in succession.) This action is considered a “double” is a violation.',
         ],
         [
+          'Set the ball 10 times (with a partner or against the wall.)',
+          'Set the ball 10 times without dropping it (with a partner or against the wall.)',
+          'Set the ball 10 times in a row while moving. Intentionally set the ball to the side so that you must move to set it. (with a partner or against the wall.)',
+          'Get in a sitting position and set the ball while only using your arms 10 times without dropping it. This drill will help strengthen your arms and wrists because your legs won’t be used. (with a partner or against the wall)',
+        ],
+        [
           {
             eval: 'Set the ball 10 times (with a partner or against the wall.)',
             toggle: false,
@@ -119,6 +131,12 @@ export class VolleyballSkillsService {
           'Make sure you always have eyes on the ball so that you know where it will land.',
           'Hit the ball at your highest reach',
           'Your approach should be one steady motion',
+        ],
+        [
+          'Do the approach 10 times successfully',
+          'Stand far away from the wall, and practice hitting 10 times against the wall. Swing the ball so that it bounces off the ground first, and then off the wall and back at you. As the ball is in the air, get in position and swing again.',
+          'Do the approach and hit the ball 10 times successfully (Have someone stand on top of a chair while holding the ball out)',
+          'Do the approach and hit the ball 10 times successfully and in the court.',
         ],
         [
           {
@@ -168,6 +186,12 @@ export class VolleyballSkillsService {
           'Don’t toss the ball too high, too low, or too forward for any of the serves.',
           'Practice your toss to make sure that they are consistent when you are doing the actual serve.',
           'Your hitting arm should first always be in a 90 degrees angle with your elbow facing up and by your ear.',
+        ],
+        [
+          'Serve the ball 10 times while doing the standing float serve approach. (The ball should be slightly over the net, and in the court for the point to count.)',
+          'Serve the ball 10 times while doing the jumping float serve. (The ball should be slightly over the net, and in the count for the point to count.)',
+          'Serve the ball 10 times while doing the top-spin serve (The ball’s trajectory should be rotating downwards. The ball should land in the court for the point to count.)',
+          'Serve the ball 10 times while aiming for a specific area you chose. (Choose any of the serving technique you want to get better at and make sure the ball lands in the general area of the spot you have chose.)',
         ],
         [
           {
