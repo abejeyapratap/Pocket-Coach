@@ -1,5 +1,5 @@
 /**
- * File name: ddribbling.page.ts
+ * File name: dribbling.page.ts
  * Purpose: Skills fetching with progression update logic
  * Date: 5/28/21
  * Author(s): Abe Jeyapratap
