@@ -4,9 +4,9 @@
 
 Have you ever wanted to learn more about a sport?
 
-Pocket Coach is a revolutionary new mobile app that teaches you how to play a sport of your choice. Pick from options like Soccer, Tennis, Basketball, or Volleyball and just start learning!
+PocketCoach is a revolutionary new mobile app that teaches you how to play a sport of your choice. Pick from options like Soccer, Tennis, Basketball, or Volleyball and just start learning!
 
-Pocket Coach eliminates the hassles around learning a Sport and provides you with all the information you need ranging from rules, techniques to proper equipment sizes.
+PocketCoach eliminates the hassles around learning a Sport and provides you with all the information you need ranging from rules, techniques to proper equipment sizes.
 The app also tracks your progression and motivates you to reach new levels in your journey! 
 
 **Team PocketCoach:**
