@@ -7,11 +7,18 @@ Have you ever wanted to learn more about a sport?
 PocketCoach is a revolutionary new mobile app that teaches you how to play a sport of your choice. Pick from options like Soccer, Tennis, Basketball, or Volleyball and just start learning!
 
 PocketCoach eliminates the hassles around learning a Sport and provides you with all the information you need ranging from rules, techniques to proper equipment sizes.
-The app also tracks your progression and motivates you to reach new levels in your journey! 
+The app also tracks your progression and motivates you to reach new levels in your journey!
 
-![image](pocket-coach/src/assets/examples/dashboard.png) | ![image](pocket-coach/src/assets/examples/sport-home.png)
-![image](pocket-coach/src/assets/examples/rules.png) | ![image](pocket-coach/src/assets/examples/sport-specific-skills.png)
-![image](pocket-coach/src/assets/examples/tennis-serving.png) | ![image](pocket-coach/src/assets/examples/videos.png)
+<!-- <table>
+<tr>
+<td><img src="pocket-coach/src/assets/examples/dashboard.png"></td>
+</tr>
+</table> -->
+
+|![image](pocket-coach/src/assets/examples/dashboard.png) |![image](pocket-coach/src/assets/examples/sport-home.png)|
+|-|-|
+|![image](pocket-coach/src/assets/examples/rules.png) |![image](pocket-coach/src/assets/examples/sport-specific-skills.png)|
+|![image](pocket-coach/src/assets/examples/tennis-serving.png) |![image](pocket-coach/src/assets/examples/videos.png)|
 
 **Team PocketCoach:**
 - Abe Jeyapratap - *Lead Developer*
