@@ -9,9 +9,9 @@ PocketCoach is a revolutionary new mobile app that teaches you how to play a spo
 PocketCoach eliminates the hassles around learning a Sport and provides you with all the information you need ranging from rules, techniques to proper equipment sizes.
 The app also tracks your progression and motivates you to reach new levels in your journey! 
 
-![image](pocket-coach/src/assets/examples/dashboard.png) ![image](pocket-coach/src/assets/examples/sport-home.png)
-![image](pocket-coach/src/assets/examples/rules.png) ![image](pocket-coach/src/assets/examples/sport-specific-skills.png)
-![image](pocket-coach/src/assets/examples/tennis-serving.png) ![image](pocket-coach/src/assets/examples/videos.png)
+![image](pocket-coach/src/assets/examples/dashboard.png) | ![image](pocket-coach/src/assets/examples/sport-home.png)
+![image](pocket-coach/src/assets/examples/rules.png) | ![image](pocket-coach/src/assets/examples/sport-specific-skills.png)
+![image](pocket-coach/src/assets/examples/tennis-serving.png) | ![image](pocket-coach/src/assets/examples/videos.png)
 
 **Team PocketCoach:**
 - Abe Jeyapratap - *Lead Developer*
