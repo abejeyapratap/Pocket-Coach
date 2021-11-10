@@ -16,6 +16,7 @@ The app also tracks your progression and motivates you to reach new levels in yo
 </table> -->
 
 |![image](pocket-coach/src/assets/examples/dashboard.png) |![image](pocket-coach/src/assets/examples/sport-home.png)|
+|-|-|
 |![image](pocket-coach/src/assets/examples/rules.png) |![image](pocket-coach/src/assets/examples/sport-specific-skills.png)|
 |![image](pocket-coach/src/assets/examples/tennis-serving.png) |![image](pocket-coach/src/assets/examples/videos.png)|
 
